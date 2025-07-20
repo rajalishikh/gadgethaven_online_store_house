@@ -1,8 +1,14 @@
+import { Outlet } from "react-router-dom";
+import Banner from "../Banner/Banner";
+import Footer from "../Footer/Footer";
 
 const MainRoute = () => {
     return (
         <div>
-            <h2>Welcome to the main Routes </h2>
+            <Banner></Banner>
+            <Outlet></Outlet>
+            <Footer></Footer>
+            
         </div>
     );
 };
