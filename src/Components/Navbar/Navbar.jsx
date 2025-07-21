@@ -1,5 +1,6 @@
 
 import { FaRegHeart } from "react-icons/fa";
+import BannerSection from "../BannerSection/BannerSection";
 const Navbar = () => {
     return (
         <div>
@@ -28,13 +29,14 @@ const Navbar = () => {
         <li><a>Item 3</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <a className=" text-xl font-bold">Gadget Heaven</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a>Item 1</a></li>
-      <li><a>Item 2</a></li>
-      <li><a>Item 3</a></li>
+      <li className="font-bold"><a>Home</a></li>
+      <li><a>Statistics</a></li>
+      <li><a>Dashboard</a></li>
+      <li><a>Command box</a></li>
     </ul>
   </div>
   <div className="navbar-end gap-3">
@@ -58,7 +60,12 @@ const Navbar = () => {
          
     
   </div>
-</div>
+            </div>
+            {/* banner section */}
+            <div>
+              <BannerSection></BannerSection>
+
+            </div>
             
         </div>
     );
