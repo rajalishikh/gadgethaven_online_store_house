@@ -4,10 +4,17 @@ const Banner = () => {
     return (
         <div> 
             {/* my banner container  */}
-            <div id="1" className="relative mt-6 lg:pr-6 lg:pl-6 md:pr-6 md:pl-6 mb-96">
-                <div className="min-h-screen bg-[#9538E2]  rounded-xl relative">
+            <div id="1" className="relative mt-6 pr-2 pl-2 lg:pr-6 lg:pl-6 md:pr-6 md:pl-6 mb-64 md:mb-[600px] lg:mb-96 ">
+                <div className="min-h-[800px] bg-[#9538E2]  rounded-xl relative">
                 <Navbar></Navbar>
-                <div className="ml-44 absolute mt-32">
+                <div 
+                className="absolute 
+     ml-0 mt-3        
+    sm:ml-8 sm:mt-6   
+    md:ml-2 md:mt-16 
+    lg:ml-0 lg:mt-32 
+    xl:ml-20 xl:mt-40 
+    2xl:ml-48 2xl:mt-48">
                      <Glass></Glass>
                </div>
                
