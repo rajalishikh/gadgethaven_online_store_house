@@ -5,7 +5,7 @@ const Banner = () => {
         <div> 
             {/* my banner container  */}
             <div id="1" className="relative mt-6 pr-2 pl-2 lg:pr-6 lg:pl-6 md:pr-6 md:pl-6 mb-64 md:mb-[600px] lg:mb-96 ">
-                <div className="min-h-[800px] bg-[#9538E2]  rounded-xl relative">
+                <div className="min-h-[500px] lg:min-h-[800px] bg-[#9538E2]  rounded-xl relative">
                 <Navbar></Navbar>
                 <div 
                 className="absolute 
