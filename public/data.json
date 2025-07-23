@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "category": "Accessories",
+    "name": "Girls Clips",
+    "specification": "Active noise cancellation, Wireless charging case",
+    "price": 249,
+    "rating": 4.7,
+    "image": "https://i.ibb.co/Kx94yCg9/1.jpg"
+  },
+  {
+    "id": 2,
+    "category": "Accessories",
+    "name": "Girls hair band",
+    "specification": "Noise cancellation, Compact design",
+    "price": 149,
+    "rating": 4.5,
+    "image": "https://i.ibb.co/RTFkVXLP/2.jpg"
+  },
+  {
+    "id": 3,
+    "category": "Accessories",
+    "name": "girls dress",
+    "specification": "Portable charger, 10000mAh battery",
+    "price": 39,
+    "rating": 4.6,
+    "image": "https://i.ibb.co/tPZSmdtT/3.jpg"
+  },
+  {
+    "id": 4,
+    "category": "Accessories",
+    "name": "girls white clip",
+    "specification": "Ergonomic wireless mouse, USB-C",
+    "price": 99,
+    "rating": 4.8,
+    "image": "https://i.ibb.co/GQRm48YS/4.jpg"
+  },
+  {
+    "id": 5,
+    "category": "Accessories",
+    "name": "SanDisk 128GB USB 3.0",
+    "specification": "High-speed data transfer",
+    "price": 25,
+    "rating": 4.4,
+    "image": "https://m.media-amazon.com/images/I/61Vx7kBzQeL._AC_SL1500_.jpg"
+  },
+  {
+    "id": 6,
+    "category": "Accessories",
+    "name": "Girls combo pack",
+    "specification": "Charges iPhone, Apple Watch, AirPods",
+    "price": 119,
+    "rating": 4.6,
+    "image": "https://i.ibb.co/TxsnGJcz/5.jpg"
+  },
+  {
+    "id": 7,
+    "category": "Accessories",
+    "name": "Winter Cap",
+    "specification": "4K HDMI, 3 USB ports, SD card slot",
+    "price": 45,
+    "rating": 4.3,
+    "image": "https://i.ibb.co/YBqGFJsg/7.jpg"
+  },
+  {
+    "id": 8,
+    "category": "iPhone",
+    "name": "iPhone 14 Pro Max",
+    "specification": "6.7-inch display, A16 chip, 128GB",
+    "price": 1099,
+    "rating": 4.9,
+    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-pro-model-select-2022"
+  },
+  {
+    "id": 9,
+    "category": "iPhone",
+    "name": "iPhone 13",
+    "specification": "6.1-inch display, A15 chip, 128GB",
+    "price": 799,
+    "rating": 4.8,
+    "image": "https://i.ibb.co/M5xwMf61/elegant-smartphone-composition-1.jpg"
+  },
+  {
+    "id": 10,
+    "category": "iPhone",
+    "name": "iPhone SE (2022)",
+    "specification": "4.7-inch display, A15 chip, 64GB",
+    "price": 429,
+    "rating": 4.5,
+    "image": "https://i.ibb.co/RpKGTFM6/elegant-smartphone-composition-2.jpg"
+  },
+  {
+    "id": 11,
+    "category": "iPhone",
+    "name": "iPhone 12 Mini",
+    "specification": "5.4-inch display, A14 chip, 128GB",
+    "price": 699,
+    "rating": 4.4,
+    "image": "https://i.ibb.co/nsrs9GVb/elegant-smartphone-composition-3.jpg"
+  },
+  {
+    "id": 12,
+    "category": "iPhone",
+    "name": "iPhone XR",
+    "specification": "6.1-inch LCD, A12 chip, 64GB",
+    "price": 499,
+    "rating": 4.3,
+    "image": "https://i.ibb.co/jk05qC5n/elegant-smartphone-composition.jpg"
+  },
+  {
+    "id": 13,
+    "category": "iPhone",
+    "name": "iPhone 11",
+    "specification": "6.1-inch Liquid Retina HD, 128GB",
+    "price": 599,
+    "rating": 4.7,
+    "image": "https://i.ibb.co/wrj3VhWp/mobile-phone-with-colorful-background.jpg"
+  },
+  {
+    "id": 14,
+    "category": "iPhone",
+    "name": "iPhone 12",
+    "specification": "6.1-inch Liquid Retina HD, 128GB",
+    "price": 599,
+    "rating": 4.7,
+    "image": "https://i.ibb.co/TMgtjxw1/top-view-smartphone-template-workspace.jpg"
+  },
+  {
+    "id": 15,
+    "category": "Laptop",
+    "name": "MacBook Air M2",
+    "specification": "13.6-inch Retina, 8GB RAM, 256GB SSD",
+    "price": 1199,
+    "rating": 4.9,
+    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbook-air-m2"
+  },
+  {
+    "id": 16,
+    "category": "Laptop",
+    "name": "Dell XPS 13",
+    "specification": "13.4-inch FHD, i7, 16GB RAM, 512GB SSD",
+    "price": 1299,
+    "rating": 4.8,
+    "image": "https://i.ibb.co/zVNqKHJf/laptop-near-globe-stationery.jpg"
+  },
+  {
+    "id": 17,
+    "category": "Laptop",
+    "name": "HP Spectre x360",
+    "specification": "13.5-inch touch, i7, 16GB RAM, 1TB SSD",
+    "price": 1399,
+    "rating": 4.7,
+    "image": "https://i.ibb.co/q34y7wrz/laptop-with-white-screen-isolated-white-wall.jpg"
+  },
+  {
+    "id": 18,
+    "category": "Laptop",
+    "name": "Lenovo ThinkPad X1 Carbon",
+    "specification": "14-inch, i7, 16GB RAM, 512GB SSD",
+    "price": 1499,
+    "rating": 4.6,
+    "image": "https://i.ibb.co/3m9k1qhp/pexels-gulsahaydgn-19308356-1.jpg"
+  },
+  {
+    "id": 19,
+    "category": "Laptop",
+    "name": "Asus ROG Zephyrus G14",
+    "specification": "14-inch, Ryzen 9, 16GB RAM, 1TB SSD",
+    "price": 1599,
+    "rating": 4.8,
+    "image": "https://i.ibb.co/LXcWQ53j/still-life-books-versus-technology.jpg"
+  },
+  {
+    "id": 20,
+    "category": "Laptop",
+    "name": "Acer Aspire 5",
+    "specification": "15.6-inch, i5, 8GB RAM, 256GB SSD",
+    "price": 549,
+    "rating": 4.5,
+    "image": "https://i.ibb.co/0R7KPzhQ/pexels-junior-teixeira-1064069-2047905.jpg"
+  },
+  {
+    "id": 21,
+    "category": "Phone",
+    "name": "Samsung Galaxy S23",
+    "specification": "6.1-inch AMOLED, Snapdragon 8 Gen 2, 128GB",
+    "price": 799,
+    "rating": 4.8,
+    "image": "https://i.ibb.co/ZRTrsrJB/download.jpg"
+  },
+  {
+    "id": 22,
+    "category": "Phone",
+    "name": "OnePlus 11",
+    "specification": "6.7-inch AMOLED, Snapdragon 8 Gen 2, 256GB",
+    "price": 699,
+    "rating": 4.7,
+    "image": "https://i.ibb.co/Vct0p7qL/images-1.jpg"
+  },
+  {
+    "id": 23,
+    "category": "Phone",
+    "name": "Google Pixel 7",
+    "specification": "6.3-inch OLED, Tensor G2, 128GB",
+    "price": 599,
+    "rating": 4.6,
+    "image": "https://i.ibb.co/qFMnxK1M/images.jpg"
+  },
+  {
+    "id": 24,
+    "category": "Phone",
+    "name": "Xiaomi 13 Pro",
+    "specification": "6.73-inch AMOLED, Snapdragon 8 Gen 2, 256GB",
+    "price": 749,
+    "rating": 4.5,
+    "image": "https://i.ibb.co/wZbYCrH6/s-tulkt.jpg"
+  },
+  {
+    "id": 25,
+    "category": "Watch",
+    "name": "Apple Watch Series 9",
+    "specification": "45mm, Always-On Retina, GPS",
+    "price": 399,
+    "rating": 4.8,
+    "image": "https://i.ibb.co/4w5ZfjpP/pexels-ferarcosn-190819.jpg"
+  },
+  {
+    "id": 26,
+    "category": "Watch",
+    "name": "Samsung Galaxy Watch 6",
+    "specification": "1.5-inch Super AMOLED, 40mm, Wear OS",
+    "price": 299,
+    "rating": 4.7,
+    "image": "https://i.ibb.co/k6W95k9c/pexels-jatin-anand-33853-125779.jpg"
+  },
+  {
+    "id": 27,
+    "category": "Watch",
+    "name": "Amazfit GTR 4",
+    "specification": "1.43-inch AMOLED, GPS, 475mAh battery",
+    "price": 199,
+    "rating": 4.5,
+    "image": "https://i.ibb.co/pB2FSfVQ/pexels-joey-nguy-n-1056657-2113994.jpg"
+  },
+  {
+    "id": 28,
+    "category": "Watch",
+    "name": "Fitbit Versa 4",
+    "specification": "1.58-inch AMOLED, Heart rate, GPS",
+    "price": 229,
+    "rating": 4.3,
+    "image": "https://i.ibb.co/qYMzrBwQ/pexels-pixabay-277390.jpg"
+  },
+  {
+    "id": 29,
+    "category": "Watch",
+    "name": "RATimer",
+    "specification": "1.58-inch AMOLED, Heart rate, GPS",
+    "price": 229,
+    "rating": 4.3,
+    "image": "https://i.ibb.co/Z6grsh1d/pexels-pixabay-280250.jpg"
+  },
+  {
+    "id": 30,
+    "category": "Watch",
+    "name": "Walton digital watch ",
+    "specification": "1.58-inch AMOLED, Heart rate, GPS",
+    "price": 229,
+    "rating": 4.3,
+    "image": "https://i.ibb.co/7xB5Dd56/pexels-tdcat-437037.jpg"
+  }
+]

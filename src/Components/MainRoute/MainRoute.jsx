@@ -9,6 +9,8 @@ const MainRoute = () => {
             <Outlet></Outlet>
             <Footer></Footer>
             
+
+            
         </div>
     );
 };
