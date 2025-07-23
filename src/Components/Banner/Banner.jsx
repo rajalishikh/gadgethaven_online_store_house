@@ -1,10 +1,11 @@
+import AllProduct from "../AllProduct/AllProduct";
 import Glass from "../Glass/Glass";
 import Navbar from "../Navbar/Navbar";
 const Banner = () => {
     return (
         <div> 
             {/* my banner container  */}
-            <div id="1" className="relative mt-6 pr-2 pl-2 lg:pr-6 lg:pl-6 md:pr-6 md:pl-6 mb-64 md:mb-[600px] lg:mb-96 ">
+            <div id="1" className="relative pt-6 pr-2 pl-2 lg:pr-6 lg:pl-6 md:pr-6 md:pl-6 mb-64 md:mb-[600px] lg:mb-96 ">
                 <div className="min-h-[500px] lg:min-h-[800px] bg-[#9538E2]  rounded-xl relative">
                 <Navbar></Navbar>
                 <div 
@@ -23,8 +24,14 @@ const Banner = () => {
                </div>
                {/* Banner container end  */}
 
-            <div id="2">
-                <h3>1hi</h3>
+            <div className="mb-20 flex justify-center">
+                <div>
+                    <h2 className="text-center text-black font-bold text-2xl mb-5">Explore Cutting-Edge Gadgets</h2>
+
+                {/* All product container  */}
+                <AllProduct></AllProduct>
+                </div>
+                
             </div>
 
             

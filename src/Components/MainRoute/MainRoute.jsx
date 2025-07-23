@@ -4,13 +4,13 @@ import Footer from "../Footer/Footer";
 
 const MainRoute = () => {
     return (
-        <div>
+        <div >
             <Banner></Banner>
             <Outlet></Outlet>
             <Footer></Footer>
             
 
-            
+
         </div>
     );
 };
