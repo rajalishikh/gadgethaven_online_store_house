@@ -2,8 +2,8 @@ import ProductContainer from "../ProductContainer/ProductContainer";
 
 const AllProduct = () => {
     return (
-        <div className="flex gap-6 border border-red-300">
-            <div className="bg-[#FFFFFF] p-2 rounded-xl flex justify-center">
+        <div className="flex gap-6 border ">
+            <div className="bg-[#FFFFFF] p-2 rounded-xl flex justify-center h-[400px]">
                 {/* Product Button */}
                <div >
                  <button className="p-3 rounded-xl bg-[#09080F99] hover:bg-[#9538E2] hover:text-white font-bold mb-2 w-36">All product</button><br />

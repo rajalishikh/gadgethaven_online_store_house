@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import ProductCard from "../ProductCard/ProductCard";
 
 const ProductContainer = () => {
     const [product,setProduct]=useState([])
@@ -9,8 +10,10 @@ const ProductContainer = () => {
     },[])
     console.log("Here us gadget data ",product)
     return (
-        <div>
-            <h2>{product.length}</h2>
+        <div className="grid grid-cols-3 gap-2">
+           {
+            product.map(item=><ProductCard item={item}></ProductCard>)
+           }
             
         </div>
     );
