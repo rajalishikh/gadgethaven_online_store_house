@@ -14,7 +14,7 @@ const ProductContainer = () => {
     return (
         <div className="grid grid-cols-1 lg:grid-cols-3  gap-2">
            {
-            sliceProduct.map(item=><ProductCard item={item}></ProductCard>)
+            product.map(item=><ProductCard item={item}></ProductCard>)
            }
             
         </div>
