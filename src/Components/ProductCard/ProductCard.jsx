@@ -6,24 +6,26 @@ const ProductCard = ({item}) => {
     return (
         <div>
             <div className="card bg-base-100 lg:w-90 md:h-[400px] xl:h-[400px] 2xl:h-[400px] lg:h-[400px] shadow-xl hover:scale-105">
-  <figure className="px-10 pt-10">
+  <figure className="px-5 pt-2">
     <img
+    
       src={image}
       onError={(e) => {
       e.target.onerror = null; 
       e.target.src = error;
       setTrue(false)
+
          
   }}
   
-      alt="Shoes"
-      className="rounded-xl" />
+      alt="Image"
+      className="rounded-lg w-full  h-full "  />
   </figure>
-  <div className="card-body items-center text-center">
-    <h2 className="card-title">{stateTrue?`${name}`:"Image link is not working Properly "}</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions">
-      <button className="btn btn-primary">Buy Now</button>
+  <div className="card-body ">
+    <h2 className="card-title font-bold justify-start">{stateTrue?`${name}`:"Image link is not working Properly "}</h2>
+    <p className='text-xl'>Price :{price}</p>
+    <div>
+      <button className="border border-[#9538E2] p-2 rounded-xl text-[#9538E2] btn hover:bg-[#9538E2] hover:text-white">View Details</button>
     </div>
   </div>
 </div>
