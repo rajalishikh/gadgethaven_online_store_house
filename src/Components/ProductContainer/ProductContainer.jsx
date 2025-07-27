@@ -3,6 +3,8 @@ import ProductCard from "../ProductCard/ProductCard";
 
 const ProductContainer = () => {
     const [product,setProduct]=useState([])
+    const sliceProduct=product.slice(0,9)
+    console.log("here is my 9 product",sliceProduct)
     useEffect(()=>{
         fetch("../../../public/data.json")
         .then(res=>res.json())
@@ -10,9 +12,9 @@ const ProductContainer = () => {
     },[])
     console.log("Here us gadget data ",product)
     return (
-        <div className="grid grid-cols-3 gap-2">
+        <div className="grid grid-cols-1 lg:grid-cols-3  gap-2">
            {
-            product.map(item=><ProductCard item={item}></ProductCard>)
+            sliceProduct.map(item=><ProductCard item={item}></ProductCard>)
            }
             
         </div>
