@@ -1,0 +1,7 @@
+active-link {
+  color: blue;
+  font-weight: bold;
+}
+.inactive-link {
+  color: black;
+}

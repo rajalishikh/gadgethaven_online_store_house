@@ -1,6 +1,7 @@
 
 import { FaRegHeart } from "react-icons/fa";
 import BannerSection from "../BannerSection/BannerSection";
+import "./Navbar.css";
 const Navbar = () => {
     return (
         <div>
@@ -23,21 +24,18 @@ const Navbar = () => {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-[#9538E2] rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        <li className="font-bold"><a>Home</a></li>
-      <li><a>Statistics</a></li>
-      <li><a>Dashboard</a></li>
-      <li><a>Command box</a></li>
+        className="menu menu-sm dropdown-content bg-[#9538E2] rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+        
+     
+     
+    
       </ul>
     </div>
     <a className=" text-xl font-bold">Gadget Heaven</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li className="font-bold"><a>Home</a></li>
-      <li><a>Statistics</a></li>
-      <li><a>Dashboard</a></li>
-      <li><a>Command box</a></li>
+    
     </ul>
   </div>
   <div className="navbar-end gap-3">
