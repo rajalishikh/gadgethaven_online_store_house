@@ -27,7 +27,7 @@ const Navbar = () => {
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-[#9538E2] rounded-box z-[1] mt-3 w-52 p-2 shadow ">
           
-          <li> <NavLink to={"/"} className={({isActive})=>isActive?"Active ":"nonActive" }>Home</NavLink></li>
+      <li> <NavLink to={"/"} className={({isActive})=>isActive?"Active ":"nonActive" }>Home</NavLink></li>
       <li><NavLink to={"/static"} className={({isActive})=>isActive?"Active ":"nonActive" }>Static</NavLink></li>
       <li><NavLink to={"/dashboard"} className={({isActive})=>isActive?"Active ":"nonActive" }>DashBoard</NavLink></li>
         

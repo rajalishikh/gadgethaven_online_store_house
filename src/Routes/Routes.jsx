@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Dashboard from "../Components/DashBoard/Dashboard";
 import ErrorElement from "../Components/ErrorElement/ErrorElement";
+import Home from "../Components/Home/Home";
 import MainRoute from "../Components/MainRoute/MainRoute";
 import Static from "../Components/Static/Static";
 
@@ -10,6 +11,11 @@ import Static from "../Components/Static/Static";
     element: <MainRoute></MainRoute>,
     errorElement:<ErrorElement></ErrorElement>,
     children:[
+      {
+        path:"/",
+        element:<Home></Home>
+
+      },
       {
 
         path:"/static",
