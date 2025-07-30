@@ -5,7 +5,7 @@ import Footer from "../Footer/Footer";
 const MainRoute = () => {
     return (
         <div >
-            <Banner></Banner>
+            <Banner ></Banner>
             <Outlet></Outlet>
             <Footer></Footer>
             
