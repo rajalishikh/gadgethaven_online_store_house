@@ -1,7 +1,9 @@
-active-link {
-  color: blue;
-  font-weight: bold;
+.Active {
+  padding: 6px;
+  color: white;
+  border-radius: 5px;
+  background-color: orange;
 }
-.inactive-link {
-  color: black;
+.nonActive {
+  color: white;
 }

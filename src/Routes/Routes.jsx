@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import Dashboard from "../Components/DashBoard/Dashboard";
 import ErrorElement from "../Components/ErrorElement/ErrorElement";
 import MainRoute from "../Components/MainRoute/MainRoute";
 import Static from "../Components/Static/Static";
@@ -10,8 +11,14 @@ import Static from "../Components/Static/Static";
     errorElement:<ErrorElement></ErrorElement>,
     children:[
       {
+
         path:"/static",
         element:<Static></Static>
+
+      },
+      {
+        path:"/dashBoard",
+        element:<Dashboard></Dashboard>
 
       }
     ]
