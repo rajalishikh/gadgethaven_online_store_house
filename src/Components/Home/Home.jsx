@@ -1,13 +1,33 @@
 import AllProduct from "../AllProduct/AllProduct";
+import BannerSection from "../BannerSection/BannerSection";
+import Glass from '../Glass/Glass';
 
 
 
 const Home = () => {
     return (
         <div>
-            {/* glass section start */}
+           {/* banner section */}
+            <div className="min-h-[500px] lg:min-h-[800px] bg-[#9538E2] m-2 rounded-xl relative mb-24 md:mb-[600px] lg:mb-96">
                 
-            {/* glass section End */}
+             <div className="pt-6">
+                 <BannerSection></BannerSection>
+             </div>
+              {/* glass section start */}
+                <div 
+                className="absolute
+     ml-0 mt-8        
+    sm:ml-8 sm:mt-6   
+    md:ml-2 md:mt-16 
+    lg:ml-0 lg:mt-32 
+    xl:ml-32 xl:mt-40 
+    2xl:ml-48 2xl:mt-48">
+                     <Glass></Glass>
+               </div>
+                 {/* glass section End */}
+
+            </div>
+            
             
              {/* All product container start  */}
              <div className="mb-20 flex justify-center">

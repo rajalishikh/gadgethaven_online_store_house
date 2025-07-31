@@ -1,7 +1,6 @@
 
 import { FaRegHeart } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import BannerSection from "../BannerSection/BannerSection";
 import "./Navbar.css";
 const Navbar = () => {
     return (
@@ -71,11 +70,7 @@ const Navbar = () => {
     
   </div>
             </div>
-            {/* banner section */}
-            <div className="mt-10">
-              <BannerSection></BannerSection>
-
-            </div>
+           
             
         </div>
     );
