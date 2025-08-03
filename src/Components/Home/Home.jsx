@@ -1,14 +1,23 @@
+import { useLocation } from "react-router-dom";
 import AllProduct from "../AllProduct/AllProduct";
+import Banner from '../Banner/Banner';
 import BannerSection from "../BannerSection/BannerSection";
 import Glass from '../Glass/Glass';
 
 
 
 const Home = () => {
+    const location=useLocation()
+    console.log("MY location", location.pathname)
     return (
         <div>
            {/* banner section */}
+           
+
+           
+           
             <div className="min-h-[500px] lg:min-h-[800px] bg-[#9538E2] m-2 rounded-xl relative mb-24 md:mb-[600px] lg:mb-96">
+              <Banner></Banner>
                 
              <div className="pt-6">
                  <BannerSection></BannerSection>

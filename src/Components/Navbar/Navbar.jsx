@@ -1,11 +1,15 @@
 
 import { FaRegHeart } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import "./Navbar.css";
 const Navbar = () => {
+  const location =useLocation()
+  
+
     return (
         <div>
-            <div className="navbar text-[#FFFFFF]  ">
+           
+            <div id="my_banner" className="navbar text-[#FFFFFF]  ">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
