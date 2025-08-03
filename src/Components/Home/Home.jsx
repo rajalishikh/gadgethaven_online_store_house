@@ -16,7 +16,7 @@ const Home = () => {
 
            
            
-            <div className="min-h-[500px] lg:min-h-[800px] bg-[#9538E2] m-2 rounded-xl relative mb-24 md:mb-[600px] lg:mb-96">
+            <div className="min-h-[500px] lg:min-h-[800px] bg-[#9538E2] m-2 rounded-xl relative mb-40 md:mb-[500px] lg:mb-96">
               <Banner></Banner>
                 
              <div className="pt-6">

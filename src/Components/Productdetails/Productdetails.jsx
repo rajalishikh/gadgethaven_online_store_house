@@ -1,10 +1,12 @@
 import { FaRegHeart } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import Glass from "../Glass/Glass";
 import './ps.css';
 
 const Productdetails = () => {
     return (
         <div>
+            {/* Navbar Section Start  */}
              <div id="my_banner" className="navbar text-[#0B0B0B] bg-[#FFFFFF] ">
   <div className="navbar-start">
     <div className="dropdown">
@@ -70,6 +72,36 @@ const Productdetails = () => {
     
   </div>
             </div>
+            {/* Navbar Section End   */} 
+
+            {/* product banner section start  */}
+
+             <div className="min-h-[400px] lg:min-h-[400px] bg-[#9538E2]  rounded-xl relative mb-24 md:mb-[600px] lg:mb-96">
+              
+                
+             <div className="pt-6">
+                <div>
+            <h2 className="text-[#FFFFFF] font-bold text-2xl lg:text-3xl md:text-3xl  text-center ">Product details </h2>
+            <p className="text-[#FFFFFF] text-center mt-5">Explore the latest gadgets that will take your experience to the next level. From smart devices to <br />the coolest accessories, we have it all!</p>
+
+           
+        </div>
+             </div>
+              {/* glass section start */}
+                <div 
+                className="absolute
+     ml-0 mt-24    
+    
+    md:ml-2 md:mt-32  
+    lg:ml-0 lg:mt-36
+    xl:ml-32 xl:mt-24 
+    2xl:ml-52 2xl:mt-24">
+                     <Glass></Glass>
+               </div>
+                 {/* glass section End */}
+
+            </div>
+             {/* product banner section End  */}
            
             
         </div>
