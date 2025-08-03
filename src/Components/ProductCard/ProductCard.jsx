@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import error from '../../Image/12085308_20944135.jpg';
 const ProductCard = ({item}) => {
     const {id,category,name,specification,price,rating,image}=item
@@ -32,7 +33,7 @@ const ProductCard = ({item}) => {
     <h2 className="card-title font-bold justify-start">{stateTrue?`${name}`:"Image link is not working Properly "}</h2>
     <p className='text-xl'>Price :{price}</p>
     <div>
-      <button  className="border border-[#9538E2] p-2 rounded-xl text-[#9538E2] btn hover:bg-[#9538E2] hover:text-white">View Details</button>
+     <Link to={'/productDetails'} >  <button  className="border border-[#9538E2] p-2 rounded-xl text-[#9538E2] btn hover:bg-[#9538E2] hover:text-white">View Details</button></Link>
     </div>
   </div>
 </div>

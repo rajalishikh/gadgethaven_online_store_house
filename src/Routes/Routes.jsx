@@ -3,6 +3,7 @@ import Dashboard from "../Components/DashBoard/Dashboard";
 import ErrorElement from "../Components/ErrorElement/ErrorElement";
 import Home from "../Components/Home/Home";
 import MainRoute from "../Components/MainRoute/MainRoute";
+import Productdetails from "../Components/Productdetails/Productdetails";
 import Static from "../Components/Static/Static";
 
  export const router = createBrowserRouter([
@@ -26,6 +27,10 @@ import Static from "../Components/Static/Static";
         path:"/dashBoard",
         element:<Dashboard></Dashboard>
 
+      },
+      {
+        path:"/productDetails",
+        element: <Productdetails></Productdetails>
       }
     ]
   },

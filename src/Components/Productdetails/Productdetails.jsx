@@ -1,11 +1,11 @@
 import { FaRegHeart } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import './st.css';
+import './ps.css';
 
-const Static = () => {
+const Productdetails = () => {
     return (
         <div>
-           <div id="my_banner" className="navbar text-[#0B0B0B] bg-[#FFFFFF] ">
+             <div id="my_banner" className="navbar text-[#0B0B0B] bg-[#FFFFFF] ">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -70,10 +70,10 @@ const Static = () => {
     
   </div>
             </div>
-            welcome my static page 
+           
             
         </div>
     );
 };
 
-export default Static;
+export default Productdetails;
