@@ -106,7 +106,7 @@ const Productdetails = () => {
     
     md:ml-2 md:mt-32  
     lg:ml-0 lg:mt-36
-    xl:ml-40 xl:mt-24 
+    xl:ml-32 xl:mt-24 
     2xl:ml-52 2xl:mt-24">
                      <Pdc data={dataLoadById}></Pdc>
                </div>
