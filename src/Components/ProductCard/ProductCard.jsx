@@ -33,7 +33,7 @@ const ProductCard = ({item}) => {
     <h2 className="card-title font-bold justify-start">{stateTrue?`${name}`:"Image link is not working Properly "}</h2>
     <p className='text-xl'>Price :{price}</p>
     <div>
-     <Link to={'/productDetails'} >  <button  className="border border-[#9538E2] p-2 rounded-xl text-[#9538E2] btn hover:bg-[#9538E2] hover:text-white">View Details</button></Link>
+     <Link to={`/productDetails/${id}`} >  <button  className="border border-[#9538E2] p-2 rounded-xl text-[#9538E2] btn hover:bg-[#9538E2] hover:text-white">View Details</button></Link>
     </div>
   </div>
 </div>

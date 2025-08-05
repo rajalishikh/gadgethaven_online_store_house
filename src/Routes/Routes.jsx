@@ -29,8 +29,9 @@ import Static from "../Components/Static/Static";
 
       },
       {
-        path:"/productDetails",
-        element: <Productdetails></Productdetails>
+        path:"/productDetails/:bookId",
+        element: <Productdetails></Productdetails>,
+        loader:()=>fetch("../../public/data.json")
       }
     ]
   },

@@ -1,9 +1,21 @@
 import { FaRegHeart } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
-import Glass from "../Glass/Glass";
+import { NavLink, useLoaderData, useParams } from "react-router-dom";
+import Pdc from "../ProductDetailsCard/Pdc";
 import './ps.css';
 
 const Productdetails = () => {
+    const dynamicID=useParams()
+    const data =useLoaderData()
+   
+    const dynamicIdConvertInt=parseInt(dynamicID.bookId)
+    console.log(dynamicIdConvertInt)
+
+    console.log("My loader data ", data)
+
+    const dataLoadById=data.find(item=>item.id === dynamicIdConvertInt)
+    console.log(dataLoadById)
+    
+    
     return (
         <div>
             {/* Navbar Section Start  */}
@@ -94,9 +106,9 @@ const Productdetails = () => {
     
     md:ml-2 md:mt-32  
     lg:ml-0 lg:mt-36
-    xl:ml-32 xl:mt-24 
+    xl:ml-40 xl:mt-24 
     2xl:ml-52 2xl:mt-24">
-                     <Glass></Glass>
+                     <Pdc data={dataLoadById}></Pdc>
                </div>
                  {/* glass section End */}
 
