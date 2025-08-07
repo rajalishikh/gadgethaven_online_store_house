@@ -42,7 +42,14 @@
     "specification": "High-speed data transfer",
     "price": 25,
     "rating": 4.4,
-    "image": "https://i.ibb.co/tMVqdvsn/download.jpg"
+    "image": "https://i.ibb.co/tMVqdvsn/download.jpg",
+    "details": [
+      { "ram": "8 GB" },
+      { "rom": "128 GB" },
+      { "scree": "Touch" },
+      { "warranty": "1 Year" },
+      { "madeIn": "South Korea" }
+    ]
   },
   {
     "id": 6,
@@ -69,7 +76,7 @@
     "specification": "6.7-inch display, A16 chip, 128GB",
     "price": 1099,
     "rating": 4.9,
-    "image": "https://i.ibb.co/3JzZCYz/1737205084-72879403b5afb9423237.jpg",
+    "image": "https://i.ibb.co.com/FLx2R6Sz/download.jpg",
     "details": [
       { "ram": "8 GB" },
       { "rom": "128 GB" },
