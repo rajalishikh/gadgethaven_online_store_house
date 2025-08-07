@@ -88,7 +88,7 @@ const Productdetails = () => {
 
             {/* product banner section start  */}
 
-             <div className="min-h-[400px] lg:min-h-[400px] bg-[#9538E2]  rounded-xl relative mb-24 md:mb-[600px] lg:mb-96">
+             <div className="min-h-[400px] lg:min-h-[400px] bg-[#9538E2]  rounded-xl relative mb-[400px] md:mb-[600px] lg:mb-96">
               
                 
              <div className="pt-6">

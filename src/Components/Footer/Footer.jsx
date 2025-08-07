@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <div>
-           <footer className="flex justify-center footer bg-base-200 text-base-content p-10">
+           <footer className="flex justify-center footer bg-base-200 text-base-content p-10 ">
             <div>
               {/* footer heading start */}
               <div className="lg:text-center ml-0 mt-3        
