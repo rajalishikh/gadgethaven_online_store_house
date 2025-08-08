@@ -471,7 +471,7 @@
   },
   {
     "id": 33,
-    "category": "MacBook",
+    "category": "Mac Book",
     "name": "Apple MacBook Pro 16-inch (M2 Max)",
     "specification": "Apple M2 Max chip, 16.2-inch Liquid Retina XDR, Touch ID",
     "price": 3499,
@@ -487,7 +487,7 @@
   },
   {
     "id": 34,
-    "category": "MacBook",
+    "category": "Mac Book",
     "name": "Apple MacBook Air 15-inch (M2)",
     "specification": "Apple M2 chip, 15.3-inch Liquid Retina, Magic Keyboard",
     "price": 1299,
@@ -503,7 +503,7 @@
   },
   {
     "id": 35,
-    "category": "MacBook",
+    "category": "Mac Book",
     "name": "Apple MacBook Pro 13-inch (M2)",
     "specification": "Apple M2 chip, 13.3-inch Retina Display, Touch Bar",
     "price": 1299,
@@ -519,7 +519,7 @@
   },
   {
     "id": 36,
-    "category": "MacBook",
+    "category": "Mac Book",
     "name": "Apple MacBook Air 13-inch (M2)",
     "specification": "Apple M2 chip, 13.6-inch Liquid Retina Display, MagSafe Charging",
     "price": 1199,
@@ -535,7 +535,7 @@
   },
   {
     "id": 37,
-    "category": "MacBook",
+    "category": "Mac Book",
     "name": "Apple MacBook Pro 14-inch (M1 Pro)",
     "specification": "Apple M1 Pro chip, 14.2-inch Liquid Retina XDR, 3 Thunderbolt Ports",
     "price": 1999,
@@ -551,7 +551,7 @@
   },
   {
     "id": 38,
-    "category": "MacBook",
+    "category": "Mac Book",
     "name": "Apple MacBook Air 13-inch (M3)",
     "specification": "Apple M3 chip, 13.6-inch Liquid Retina Display, MagSafe Charging",
     "price": 1299,
@@ -567,7 +567,7 @@
   },
   {
     "id": 39,
-    "category": "MacBook",
+    "category": "Mac Book",
     "name": "Apple MacBook Pro 16-inch (M3 Max)",
     "specification": "Apple M3 Max chip, 16.2-inch Liquid Retina XDR, 8TB SSD Option",
     "price": 3999,
