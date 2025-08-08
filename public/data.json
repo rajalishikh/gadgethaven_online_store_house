@@ -71,7 +71,7 @@
   },
   {
     "id": 8,
-    "category": "iPhone",
+    "category": "I phone",
     "name": "iPhone 14 Pro Max",
     "specification": "6.7-inch display, A16 chip, 128GB",
     "price": 1099,
@@ -87,7 +87,7 @@
   },
   {
     "id": 9,
-    "category": "iPhone",
+    "category": "I phone",
     "name": "iPhone 13",
     "specification": "6.1-inch display, A15 chip, 128GB",
     "price": 799,
@@ -103,7 +103,7 @@
   },
   {
     "id": 10,
-    "category": "iPhone",
+    "category": "I phone",
     "name": "iPhone SE (2022)",
     "specification": "4.7-inch display, A15 chip, 64GB",
     "price": 429,
@@ -119,7 +119,7 @@
   },
   {
     "id": 11,
-    "category": "iPhone",
+    "category": "I phone",
     "name": "iPhone 12 Mini",
     "specification": "5.4-inch display, A14 chip, 128GB",
     "price": 699,
@@ -151,7 +151,7 @@
   },
   {
     "id": 13,
-    "category": "iPhone",
+    "category": "I phone",
     "name": "iPhone 11",
     "specification": "6.1-inch Liquid Retina HD, 128GB",
     "price": 599,
@@ -167,7 +167,7 @@
   },
   {
     "id": 14,
-    "category": "iPhone",
+    "category": "I phone",
     "name": "iPhone 12",
     "specification": "6.1-inch Liquid Retina HD, 128GB",
     "price": 599,
@@ -343,7 +343,7 @@
   },
   {
     "id": 25,
-    "category": "Watch",
+    "category": "Smart watches",
     "name": "Apple Watch Series 9",
     "specification": "45mm, Always-On Retina, GPS",
     "price": 399,
@@ -359,7 +359,7 @@
   },
   {
     "id": 26,
-    "category": "Watch",
+    "category": "Smart watches",
     "name": "Samsung Galaxy Watch 6",
     "specification": "1.5-inch Super AMOLED, 40mm, Wear OS",
     "price": 299,
@@ -375,7 +375,7 @@
   },
   {
     "id": 27,
-    "category": "Watch",
+    "category": "Smart watches",
     "name": "Amazfit GTR 4",
     "specification": "1.43-inch AMOLED, GPS, 475mAh battery",
     "price": 199,
@@ -391,7 +391,7 @@
   },
   {
     "id": 28,
-    "category": "Watch",
+    "category": "Smart watches",
     "name": "Fitbit Versa 4",
     "specification": "1.58-inch AMOLED, Heart rate, GPS",
     "price": 229,
@@ -407,7 +407,7 @@
   },
   {
     "id": 29,
-    "category": "Watch",
+    "category": "Smart watches",
     "name": "RATimer",
     "specification": "1.58-inch AMOLED, Heart rate, GPS",
     "price": 229,
@@ -423,7 +423,7 @@
   },
   {
     "id": 30,
-    "category": "Watch",
+    "category": "Smart watches",
     "name": "Walton digital watch ",
     "specification": "1.58-inch AMOLED, Heart rate, GPS",
     "price": 229,
@@ -435,6 +435,150 @@
       { "scree": "Touch" },
       { "warranty": "1 Year" },
       { "madeIn": "South Korea" }
+    ]
+  },
+  {
+    "id": 31,
+    "category": "Mac Book",
+    "name": "Apple MacBook Air 13-inch (M1)",
+    "specification": "Apple M1 chip, 13.3-inch Retina Display, Magic Keyboard",
+    "price": 999,
+    "rating": 4.7,
+    "image": "https://i.ibb.co.com/hJDTyDHJ/download-1.jpg",
+    "details": [
+      { "ram": "8 GB" },
+      { "rom": "256 GB SSD" },
+      { "screen": "13.3-inch Retina" },
+      { "warranty": "1 Year" },
+      { "madeIn": "China" }
+    ]
+  },
+  {
+    "id": 32,
+    "category": "Mac Book",
+    "name": "Apple MacBook Pro 14-inch (M2 Pro)",
+    "specification": "Apple M2 Pro chip, 14.2-inch Liquid Retina XDR, Magic Keyboard",
+    "price": 1999,
+    "rating": 4.8,
+    "image": "https://i.ibb.co.com/RkpY1YYD/download-2.jpg",
+    "details": [
+      { "ram": "16 GB" },
+      { "rom": "512 GB SSD" },
+      { "screen": "14.2-inch Liquid Retina XDR" },
+      { "warranty": "1 Year" },
+      { "madeIn": "China" }
+    ]
+  },
+  {
+    "id": 33,
+    "category": "MacBook",
+    "name": "Apple MacBook Pro 16-inch (M2 Max)",
+    "specification": "Apple M2 Max chip, 16.2-inch Liquid Retina XDR, Touch ID",
+    "price": 3499,
+    "rating": 4.9,
+    "image": "https://i.ibb.co.com/jZrMxJjc/download-3.jpg",
+    "details": [
+      { "ram": "32 GB" },
+      { "rom": "1 TB SSD" },
+      { "screen": "16.2-inch Liquid Retina XDR" },
+      { "warranty": "1 Year" },
+      { "madeIn": "China" }
+    ]
+  },
+  {
+    "id": 34,
+    "category": "MacBook",
+    "name": "Apple MacBook Air 15-inch (M2)",
+    "specification": "Apple M2 chip, 15.3-inch Liquid Retina, Magic Keyboard",
+    "price": 1299,
+    "rating": 4.7,
+    "image": "https://i.ibb.co.com/yc9vNN7h/images.jpg",
+    "details": [
+      { "ram": "8 GB" },
+      { "rom": "256 GB SSD" },
+      { "screen": "15.3-inch Liquid Retina" },
+      { "warranty": "1 Year" },
+      { "madeIn": "China" }
+    ]
+  },
+  {
+    "id": 35,
+    "category": "MacBook",
+    "name": "Apple MacBook Pro 13-inch (M2)",
+    "specification": "Apple M2 chip, 13.3-inch Retina Display, Touch Bar",
+    "price": 1299,
+    "rating": 4.6,
+    "image": "https://i.ibb.co.com/1DHh2RD/images-2.jpg",
+    "details": [
+      { "ram": "8 GB" },
+      { "rom": "512 GB SSD" },
+      { "screen": "13.3-inch Retina" },
+      { "warranty": "1 Year" },
+      { "madeIn": "China" }
+    ]
+  },
+  {
+    "id": 36,
+    "category": "MacBook",
+    "name": "Apple MacBook Air 13-inch (M2)",
+    "specification": "Apple M2 chip, 13.6-inch Liquid Retina Display, MagSafe Charging",
+    "price": 1199,
+    "rating": 4.7,
+    "image": "https://i.ibb.co.com/9QLvcc4/images-3.jpg",
+    "details": [
+      { "ram": "8 GB" },
+      { "rom": "256 GB SSD" },
+      { "screen": "13.6-inch Liquid Retina" },
+      { "warranty": "1 Year" },
+      { "madeIn": "China" }
+    ]
+  },
+  {
+    "id": 37,
+    "category": "MacBook",
+    "name": "Apple MacBook Pro 14-inch (M1 Pro)",
+    "specification": "Apple M1 Pro chip, 14.2-inch Liquid Retina XDR, 3 Thunderbolt Ports",
+    "price": 1999,
+    "rating": 4.8,
+    "image": "https://i.ibb.co.com/9kVhv1rf/images-6.jpg",
+    "details": [
+      { "ram": "16 GB" },
+      { "rom": "512 GB SSD" },
+      { "screen": "14.2-inch Liquid Retina XDR" },
+      { "warranty": "1 Year" },
+      { "madeIn": "China" }
+    ]
+  },
+  {
+    "id": 38,
+    "category": "MacBook",
+    "name": "Apple MacBook Air 13-inch (M3)",
+    "specification": "Apple M3 chip, 13.6-inch Liquid Retina Display, MagSafe Charging",
+    "price": 1299,
+    "rating": 4.8,
+    "image": "https://i.ibb.co.com/cKSPJ8b3/images-4.jpg",
+    "details": [
+      { "ram": "8 GB" },
+      { "rom": "512 GB SSD" },
+      { "screen": "13.6-inch Liquid Retina" },
+      { "warranty": "1 Year" },
+      { "madeIn": "China" }
+    ]
+  },
+  {
+    "id": 39,
+    "category": "MacBook",
+    "name": "Apple MacBook Pro 16-inch (M3 Max)",
+    "specification": "Apple M3 Max chip, 16.2-inch Liquid Retina XDR, 8TB SSD Option",
+    "price": 3999,
+    "rating": 4.9,
+    "image": "https://i.ibb.co.com/N6K7b1BM/images-5.jpg",
+    "details": [
+      { "ram": "36 GB" },
+      { "rom": "1 TB SSD" },
+      { "screen": "16.2-inch Liquid Retina XDR" },
+      { "warranty": "1 Year" },
+      { "madeIn": "China" }
     ]
   }
 ]
