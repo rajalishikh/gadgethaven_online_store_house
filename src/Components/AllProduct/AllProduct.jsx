@@ -1,11 +1,14 @@
 import { useState } from "react";
+
 import ProductContainer from "../ProductContainer/ProductContainer";
+
 
 const AllProduct = () => {
     const [buttonName,setButtonName]=useState("")
     const handleButton=(e)=>{
-        
+       
         setButtonName(e.target.innerText)
+       
 
     }
     console.log("here is my button name ",buttonName)

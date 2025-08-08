@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
-import toast from 'react-hot-toast';
+
 import { useLocation } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
 import ProductCard from "../ProductCard/ProductCard";
-const notify = () => toast('Here is your toast.');
+
 
 const ProductContainer = ({buttonName}) => {
+    
     const location=useLocation()
     console.log("My Location",location)
     const [product,setProduct]=useState([])
@@ -18,16 +20,23 @@ const ProductContainer = ({buttonName}) => {
     console.log("Here us gadget data ",product)
 
     // Conditional show the data 
+    let [renderProducts,setRenderProducts]=useState([])
+    console.log("MY butto",renderProducts)
 
-    let renderProducts;
+    useEffect(()=>{
+        
     if(buttonName === "All product"){
+       toast("Here is you all products")
        
-        renderProducts=product.map(item=><ProductCard item={item}></ProductCard>)
+        setRenderProducts(product.map((item,idx)=><ProductCard key={idx} item={item}></ProductCard>))
        
     }
-    else if(buttonName = "Home"){
-        renderProducts = sliceProduct.map(item=><ProductCard item={item}></ProductCard>)
+    else if(buttonName === "Home"){
+        toast("Here is you home page ")
+        setRenderProducts(sliceProduct.map((item,idx)=><ProductCard key={idx} item={item}></ProductCard>)) 
     }
+
+    },[buttonName])
     
     return (
         <div className="grid grid-cols-1 lg:grid-cols-3  gap-4">
@@ -35,6 +44,7 @@ const ProductContainer = ({buttonName}) => {
            {
              buttonName ?renderProducts: sliceProduct.map(item=><ProductCard item={item}></ProductCard>)
            }
+           <ToastContainer/>
             
         </div>
     );

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import error from '../../Image/12085308_20944135.jpg';
 const ProductCard = ({item}) => {
+  console.log("Here is my item",item)
     const {id,category,name,specification,price,rating,image}=item
     const [stateTrue,setTrue]=useState(true)
     
