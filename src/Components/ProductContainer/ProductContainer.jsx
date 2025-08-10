@@ -11,13 +11,13 @@ const ProductContainer = ({buttonName}) => {
     console.log("My Location",location)
     const [product,setProduct]=useState([])
     const sliceProduct=product.slice(0,9)
-    console.log("here is my 9 product",sliceProduct)
+    
     useEffect(()=>{
         fetch("../../../public/data.json")
         .then(res=>res.json())
         .then(data=>setProduct(data))
     },[])
-    console.log("Here us gadget data ",product)
+    
 
     // Conditional show the data 
     let [renderProducts,setRenderProducts]=useState([])
@@ -26,14 +26,22 @@ const ProductContainer = ({buttonName}) => {
     useEffect(()=>{
         
     if(buttonName === "All product"){
-       toast("Here is you all products")
+       toast("Here are all the products")
        
         setRenderProducts(product.map((item,idx)=><ProductCard key={idx} item={item}></ProductCard>))
        
     }
     else if(buttonName === "Home"){
-        toast("Here is you home page ")
+        toast("Here are home page ")
         setRenderProducts(sliceProduct.map((item,idx)=><ProductCard key={idx} item={item}></ProductCard>)) 
+    }
+    else if(buttonName === "Laptop"){
+        toast("Here are Laptop")
+        const laptop=product.filter((item,)=>item.category === "Laptop")
+        setRenderProducts(laptop.map((item,idx)=><ProductCard item={item} key={idx}></ProductCard>))
+       
+    
+
     }
 
     },[buttonName])
@@ -47,6 +55,7 @@ const ProductContainer = ({buttonName}) => {
            <ToastContainer/>
             
         </div>
+         
     );
 };
 
