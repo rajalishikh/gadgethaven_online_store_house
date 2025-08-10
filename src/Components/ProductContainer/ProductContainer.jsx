@@ -39,10 +39,32 @@ const ProductContainer = ({buttonName}) => {
         toast("Here are Laptop")
         const laptop=product.filter((item,)=>item.category === "Laptop")
         setRenderProducts(laptop.map((item,idx)=><ProductCard item={item} key={idx}></ProductCard>))
-       
-    
-
-    }
+       }
+       else if(buttonName === "Phone"){
+        toast("Here are Phone")
+        const laptop=product.filter((item,)=>item.category === "Phone")
+        setRenderProducts(laptop.map((item,idx)=><ProductCard item={item} key={idx}></ProductCard>))
+       }
+       else if(buttonName === "Accessories"){
+        toast("Here are Accessories")
+        const laptop=product.filter((item,)=>item.category === "Accessories")
+        setRenderProducts(laptop.map((item,idx)=><ProductCard item={item} key={idx}></ProductCard>))
+       }
+       else if(buttonName === "Smart watches"){
+        toast("Here are Smart watches")
+        const laptop=product.filter((item,)=>item.category === "Smart watches")
+        setRenderProducts(laptop.map((item,idx)=><ProductCard item={item} key={idx}></ProductCard>))
+       }
+       else if(buttonName === "Mac Book"){
+        toast("Here are Smart Mac Book")
+        const laptop=product.filter((item,)=>item.category === "Mac Book")
+        setRenderProducts(laptop.map((item,idx)=><ProductCard item={item} key={idx}></ProductCard>))
+       }
+       else if(buttonName === "I phone"){
+        toast("Here are Smart I phone")
+        const laptop=product.filter((item,)=>item.category === "I phone")
+        setRenderProducts(laptop.map((item,idx)=><ProductCard item={item} key={idx}></ProductCard>))
+       }
 
     },[buttonName])
     

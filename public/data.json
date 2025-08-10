@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "category": "Accessories",
+    "category": "Phone",
     "name": "SanDisk 128GB USB 3.0",
     "specification": "High-speed data transfer",
     "price": 25,
@@ -348,14 +348,7 @@
     "specification": "45mm, Always-On Retina, GPS",
     "price": 399,
     "rating": 4.8,
-    "image": "https://i.ibb.co/4w5ZfjpP/pexels-ferarcosn-190819.jpg",
-    "details": [
-      { "ram": "8 GB" },
-      { "rom": "128 GB" },
-      { "scree": "Touch" },
-      { "warranty": "1 Year" },
-      { "madeIn": "South Korea" }
-    ]
+    "image": "https://i.ibb.co/4w5ZfjpP/pexels-ferarcosn-190819.jpg"
   },
   {
     "id": 26,
@@ -364,14 +357,7 @@
     "specification": "1.5-inch Super AMOLED, 40mm, Wear OS",
     "price": 299,
     "rating": 4.7,
-    "image": "https://i.ibb.co/k6W95k9c/pexels-jatin-anand-33853-125779.jpg",
-    "details": [
-      { "ram": "8 GB" },
-      { "rom": "128 GB" },
-      { "scree": "Touch" },
-      { "warranty": "1 Year" },
-      { "madeIn": "South Korea" }
-    ]
+    "image": "https://i.ibb.co/k6W95k9c/pexels-jatin-anand-33853-125779.jpg"
   },
   {
     "id": 27,
@@ -380,14 +366,7 @@
     "specification": "1.43-inch AMOLED, GPS, 475mAh battery",
     "price": 199,
     "rating": 4.5,
-    "image": "https://i.ibb.co/pB2FSfVQ/pexels-joey-nguy-n-1056657-2113994.jpg",
-    "details": [
-      { "ram": "8 GB" },
-      { "rom": "128 GB" },
-      { "scree": "Touch" },
-      { "warranty": "1 Year" },
-      { "madeIn": "South Korea" }
-    ]
+    "image": "https://i.ibb.co/pB2FSfVQ/pexels-joey-nguy-n-1056657-2113994.jpg"
   },
   {
     "id": 28,
@@ -396,14 +375,7 @@
     "specification": "1.58-inch AMOLED, Heart rate, GPS",
     "price": 229,
     "rating": 4.3,
-    "image": "https://i.ibb.co/qYMzrBwQ/pexels-pixabay-277390.jpg",
-    "details": [
-      { "ram": "8 GB" },
-      { "rom": "128 GB" },
-      { "scree": "Touch" },
-      { "warranty": "1 Year" },
-      { "madeIn": "South Korea" }
-    ]
+    "image": "https://i.ibb.co/qYMzrBwQ/pexels-pixabay-277390.jpg"
   },
   {
     "id": 29,
@@ -412,14 +384,7 @@
     "specification": "1.58-inch AMOLED, Heart rate, GPS",
     "price": 229,
     "rating": 4.3,
-    "image": "https://i.ibb.co/Z6grsh1d/pexels-pixabay-280250.jpg",
-    "details": [
-      { "ram": "8 GB" },
-      { "rom": "128 GB" },
-      { "scree": "Touch" },
-      { "warranty": "1 Year" },
-      { "madeIn": "South Korea" }
-    ]
+    "image": "https://i.ibb.co/Z6grsh1d/pexels-pixabay-280250.jpg"
   },
   {
     "id": 30,
@@ -428,14 +393,7 @@
     "specification": "1.58-inch AMOLED, Heart rate, GPS",
     "price": 229,
     "rating": 4.3,
-    "image": "https://i.ibb.co/7xB5Dd56/pexels-tdcat-437037.jpg",
-    "details": [
-      { "ram": "8 GB" },
-      { "rom": "128 GB" },
-      { "scree": "Touch" },
-      { "warranty": "1 Year" },
-      { "madeIn": "South Korea" }
-    ]
+    "image": "https://i.ibb.co/7xB5Dd56/pexels-tdcat-437037.jpg"
   },
   {
     "id": 31,
