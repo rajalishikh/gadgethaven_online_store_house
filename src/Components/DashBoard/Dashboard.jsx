@@ -1,10 +1,23 @@
 import { FaRegHeart } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLoaderData, useParams } from "react-router-dom";
 import './Dash.css';
 
 const Dashboard = () => {
+  const params=useParams()
+ 
+   
+  const data =useLoaderData()
+
+ 
+
+  const find_data=data.find((item)=>item.id === parseInt(params.id) )
+  
+  
+ 
+  
     return (
         <div>
+          {/* NavBar Section Start */}
              <div id="my_banner" className="navbar  bg-[#FFFFFF] ">
   <div className="navbar-start">
     <div className="dropdown">
@@ -28,7 +41,7 @@ const Dashboard = () => {
           
       <li> <NavLink to={"/"} className={({isActive})=>isActive?"Active ":"nonActive" }>Home</NavLink></li>
       <li><NavLink to={"/static"} className={({isActive})=>isActive?"Active ":"nonActive" }>Static</NavLink></li>
-      <li><NavLink to={"/dashboard"} className={({isActive})=>isActive?"Active ":"nonActive" }>DashBoard</NavLink></li>
+      <li><NavLink to={"/dashBoard/:id"} className={({isActive})=>isActive?"Active":"nonActive" }>DashBoard</NavLink></li>
         
      
      
@@ -41,8 +54,7 @@ const Dashboard = () => {
     <ul className="menu menu-horizontal px-1">
       <li> <NavLink to={"/"} className={({isActive})=>isActive?"Active":"nonActive" }>Home</NavLink></li>
       <li><NavLink to={"/static"} className={({isActive})=>isActive?"Active":"nonActive" }>Static</NavLink></li>
-      <li><NavLink to={"/dashboard"} className={({isActive})=>isActive?"Active":"nonActive" }>DashBoard</NavLink></li>
-     
+      <li><NavLink to={"/dashBoard/:id"} className={({isActive})=>isActive?"Active":"nonActive" }>DashBoard</NavLink></li>
       
       
     
@@ -69,7 +81,8 @@ const Dashboard = () => {
          
     
   </div>
-            </div>
+             </div>
+          {/*  NavBar section End  */}
             <h2>Welcome to dashboard</h2>
             
         </div>

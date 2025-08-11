@@ -1,4 +1,5 @@
 import { FaRegHeart, FaShoppingCart } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Pdc = ({data}) => {
     const {id,category,name,specification,price,rating,image,details}=data
     console.log(typeof details)
@@ -47,9 +48,9 @@ const Pdc = ({data}) => {
 
 <div className="flex mt-4">
   <div className="text-white bg-[#9538E2] p-2 rounded-xl  flex justify-center">
-  <div>
-    <button >Add to Cart </button>
-  </div>
+  <Link to={`/dashBoard/${id}`}>
+    <button  >Add to Cart </button>
+  </Link>
   <div className="ml-2 text-xl mt-1" >
     <FaShoppingCart />
   </div>

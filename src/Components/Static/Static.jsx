@@ -28,7 +28,7 @@ const Static = () => {
           
       <li> <NavLink to={"/"} className={({isActive})=>isActive?"Active ":"nonActive" }>Home</NavLink></li>
       <li><NavLink to={"/static"} className={({isActive})=>isActive?"Active ":"nonActive" }>Static</NavLink></li>
-      <li><NavLink to={"/dashboard"} className={({isActive})=>isActive?"Active ":"nonActive" }>DashBoard</NavLink></li>
+      <li><NavLink to={"/dashBoard/:id"} className={({isActive})=>isActive?"Active":"nonActive" }>DashBoard</NavLink></li>
         
      
      
@@ -41,7 +41,7 @@ const Static = () => {
     <ul className="menu menu-horizontal px-1 text-[#0B0B0B]">
       <li> <NavLink to={"/"} className={({isActive})=>isActive?"Active":"nonActive" }>Home</NavLink></li>
       <li><NavLink to={"/static"} className={({isActive})=>isActive?"Active":"nonActive" }>Static</NavLink></li>
-      <li><NavLink to={"/dashboard"} className={({isActive})=>isActive?"Active":"nonActive" }>DashBoard</NavLink></li>
+      <li><NavLink to={"/dashBoard/:id"} className={({isActive})=>isActive?"Active":"nonActive" }>DashBoard</NavLink></li>
      
       
       

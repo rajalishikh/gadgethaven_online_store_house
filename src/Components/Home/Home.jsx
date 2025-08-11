@@ -8,7 +8,7 @@ import Glass from '../Glass/Glass';
 
 const Home = () => {
     const location=useLocation()
-    console.log("MY location", location.pathname)
+    
     return (
         <div>
            {/* banner section */}

@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+
 import Dashboard from "../Components/DashBoard/Dashboard";
 import ErrorElement from "../Components/ErrorElement/ErrorElement";
 import Home from "../Components/Home/Home";
@@ -24,10 +25,12 @@ import Static from "../Components/Static/Static";
 
       },
       {
-        path:"/dashBoard",
-        element:<Dashboard></Dashboard>
+        path:"/dashBoard/:id",
+        element:<Dashboard></Dashboard>,
+        loader:()=>fetch("../../public/data.json")
 
       },
+      
       {
         path:"/productDetails/:bookId",
         element: <Productdetails></Productdetails>,

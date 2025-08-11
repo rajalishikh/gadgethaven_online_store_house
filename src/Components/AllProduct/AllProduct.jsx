@@ -11,7 +11,7 @@ const AllProduct = () => {
        
 
     }
-    console.log("here is my button name ",buttonName)
+    
     return (
         <div  className="flex flex-col  lg:flex-row xl:flex-row 2xl:flex-row gap-6 border sm:justify-center m-2">
             <div className="bg-[#FFFFFF] p-2 rounded-xl flex justify-center h-[470px]">
