@@ -1,11 +1,24 @@
 import { FaRegHeart, FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
-const Pdc = ({data}) => {
+import { addToLs } from "../DashBoard/lss";
+const Pdc = ({data,fullData}) => {
+
+  
     const {id,category,name,specification,price,rating,image,details}=data
-    console.log(typeof details)
+
+    // function for save the data in local Storage 
+
+    const handleSaveLs=()=>{
+      
+      const findDataById=fullData.find(item=>item.id === id)
+      console.log("Save data",findDataById)
+      addToLs(findDataById)
+    
+    }
+    
     
     return (
-        <div className="className='border-2 border-white p-4 bg-[#FFFFFF4D] rounded-xl  ">
+        <div className="border-2 border-white p-4 bg-[#FFFFFF4D] rounded-xl">
            <div className=" card lg:card-side bg-base-100 shadow-xl 
            md:w-[725px]
            lg:w-[1000px]
@@ -48,9 +61,14 @@ const Pdc = ({data}) => {
 
 <div className="flex mt-4">
   <div className="text-white bg-[#9538E2] p-2 rounded-xl  flex justify-center">
-  <Link to={`/dashBoard/${id}`}>
-    <button  >Add to Cart </button>
+    {/* Save data in LocalStorage */}
+
+  <Link>
+    <button  onClick={()=>handleSaveLs()} >Add to Cart </button>
   </Link>
+
+
+
   <div className="ml-2 text-xl mt-1" >
     <FaShoppingCart />
   </div>

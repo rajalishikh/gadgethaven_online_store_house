@@ -27,7 +27,7 @@ import Static from "../Components/Static/Static";
       {
         path:"/dashBoard/:id",
         element:<Dashboard></Dashboard>,
-        loader:()=>fetch("../../public/data.json")
+        
 
       },
       

@@ -8,12 +8,11 @@ const Productdetails = () => {
     const data =useLoaderData()
    
     const dynamicIdConvertInt=parseInt(dynamicID.bookId)
-    console.log(dynamicIdConvertInt)
+    
 
-    console.log("My loader data ", data)
+   
 
     const dataLoadById=data.find(item=>item.id === dynamicIdConvertInt)
-    console.log(dataLoadById)
     
     
     return (
@@ -108,7 +107,7 @@ const Productdetails = () => {
     lg:ml-0 lg:mt-36
     xl:ml-32 xl:mt-24 
     2xl:ml-52 2xl:mt-24">
-                     <Pdc data={dataLoadById}></Pdc>
+                     <Pdc fullData={data} data={dataLoadById}></Pdc>
                </div>
                  {/* glass section End */}
 

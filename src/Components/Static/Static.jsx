@@ -69,8 +69,23 @@ const Static = () => {
          
     
   </div>
+           </div>
+           <div className="min-h-[300px] lg:min-h-[300px] bg-[#9538E2] ">
+              
+                
+             <div className="pt-6">
+                <div>
+            <h2 className="text-[#FFFFFF] font-bold text-2xl lg:text-3xl md:text-3xl  text-center ">Statistics</h2>
+            <p className="text-[#FFFFFF] text-center mt-5">Explore the latest gadgets that will take your experience to the next level. From smart devices to <br />the coolest accessories, we have it all!</p>
+               </div>
+
+               
             </div>
-            welcome my static page 
+              
+                
+
+          </div>
+            
             
         </div>
     );

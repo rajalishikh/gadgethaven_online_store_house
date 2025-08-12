@@ -1,21 +1,9 @@
 import { FaRegHeart } from "react-icons/fa";
-import { NavLink, useLoaderData, useParams } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import './Dash.css';
 
 const Dashboard = () => {
-  const params=useParams()
- 
-   
-  const data =useLoaderData()
-
- 
-
-  const find_data=data.find((item)=>item.id === parseInt(params.id) )
-  
-  
- 
-  
-    return (
+  return (
         <div>
           {/* NavBar Section Start */}
              <div id="my_banner" className="navbar  bg-[#FFFFFF] ">
@@ -83,7 +71,28 @@ const Dashboard = () => {
   </div>
              </div>
           {/*  NavBar section End  */}
-            <h2>Welcome to dashboard</h2>
+          {/* banar section start  */}
+          <div className="min-h-[300px] lg:min-h-[300px] bg-[#9538E2] ">
+              
+                
+             <div className="pt-6">
+                <div>
+            <h2 className="text-[#FFFFFF] font-bold text-2xl lg:text-3xl md:text-3xl  text-center ">DashBoard</h2>
+            <p className="text-[#FFFFFF] text-center mt-5">Explore the latest gadgets that will take your experience to the next level. From smart devices to <br />the coolest accessories, we have it all!</p>
+               </div>
+
+               {/* Button Section  */}
+               <div className="flex justify-center gap-2 mt-9">
+                <button className="border-2 border-[#FFFFFF] w-[150px] font-extrabold text-center rounded-xl p-2 text-white hover:bg-white hover:text-[#9538E2]"> Cart</button>
+                <button className="border-2 border-[#FFFFFF] w-[150px] font-extrabold text-center rounded-xl p-2 text-white hover:bg-white hover:text-[#9538E2]"> Wish LIst</button>
+               </div>
+            </div>
+              
+                
+
+          </div>
+          {/* banar section end  */}
+            
             
         </div>
     );
