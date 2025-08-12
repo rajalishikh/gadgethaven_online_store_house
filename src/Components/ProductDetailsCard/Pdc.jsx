@@ -14,7 +14,7 @@ const Pdc = ({data,fullData}) => {
       const findDataById=fullData.find(item=>item.id === id)
       console.log("Save data",findDataById)
       addToLs(findDataById)
-      toast("Sucesfully  save in card")
+      toast("Successfully Saved to Dashboard")
     
     }
     

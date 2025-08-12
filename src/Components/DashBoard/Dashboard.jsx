@@ -1,8 +1,12 @@
 import { FaRegHeart } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import Dbsd from "../DashBoardSaveData/Dbsd";
 import './Dash.css';
+import { getStoreCard } from "./lss";
 
 const Dashboard = () => {
+  const saveData=getStoreCard()
+  console.log(saveData)
   return (
         <div>
           {/* NavBar Section Start */}
@@ -92,6 +96,28 @@ const Dashboard = () => {
 
           </div>
           {/* banar section end  */}
+
+          <div className="lg:ml-24 lg:mr-24 mt-10">
+            <div className="lg:flex md:flex lg:justify-between md:justify-between sm:justify-center">
+              <div className=""><h3 className="text-black  text-xl font-bold text-center">Cart</h3></div>
+              <div className="flex gap-2">
+                <div><p className="lg:text-xl font-bold text-black">Total Coast </p></div>
+                <div className="flex">
+                     <button className="border border-[#8332C5] p-2 rounded-xl text-sm text-[#8332C5] hover:text-white hover:bg-[#8332C5] mr-2 lg:w-28 font-bold">Short by price </button>
+                      <button className="border border-[#8332C5] p-2 rounded-xl text-sm text-[#8332C5] hover:text-white hover:bg-[#8332C5]  lg:w-28 font-bold">Purchase</button>
+                </div>
+                
+               
+
+              </div>
+
+            </div>
+            {/* div for heading  */}
+            {
+              saveData.map(item=><Dbsd saveData={item}> </Dbsd>)
+            }
+           
+          </div>
             
             
         </div>
