@@ -98,6 +98,8 @@ const Dashboard = () => {
           {/* banar section end  */}
 
           <div className="lg:ml-24 lg:mr-24 mt-10">
+
+            {/* heading part of container  */}
             <div className="lg:flex md:flex lg:justify-between md:justify-between sm:justify-center">
               <div className=""><h3 className="text-black  text-xl font-bold text-center">Cart</h3></div>
               <div className="flex gap-2">
@@ -112,6 +114,7 @@ const Dashboard = () => {
               </div>
 
             </div>
+            {/* heading part end  of container  */}
             {/* div for heading  */}
             {
               saveData.map(item=><Dbsd saveData={item}> </Dbsd>)

@@ -8,12 +8,14 @@ const Dbsd = ({saveData}) => {
             <div>
                <div className="card card-side bg-base-100 shadow-xl mb-4 mt-4">
   <figure>
+    {/* Image part */}
     <img
     className="w-[200px] h-[124px] m-4"
       src={image}
       alt="Movie" />
       
   </figure>
+  {/* container part  */}
   <div className="flex  justify-between w-full items-center">
     <div>
         <h2 className="card-title font-bold text-xl">{name}</h2>
