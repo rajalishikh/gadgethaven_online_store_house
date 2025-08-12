@@ -25,7 +25,7 @@ import Static from "../Components/Static/Static";
 
       },
       {
-        path:"/dashBoard/:id",
+        path:"/dashBoard",
         element:<Dashboard></Dashboard>,
         
 

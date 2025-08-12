@@ -29,7 +29,7 @@ const Dashboard = () => {
           
       <li> <NavLink to={"/"} className={({isActive})=>isActive?"Active ":"nonActive" }>Home</NavLink></li>
       <li><NavLink to={"/static"} className={({isActive})=>isActive?"Active ":"nonActive" }>Static</NavLink></li>
-      <li><NavLink to={"/dashBoard/:id"} className={({isActive})=>isActive?"Active":"nonActive" }>DashBoard</NavLink></li>
+      <li><NavLink to={"/dashBoard"} className={({isActive})=>isActive?"Active":"nonActive" }>DashBoard</NavLink></li>
         
      
      
@@ -42,7 +42,7 @@ const Dashboard = () => {
     <ul className="menu menu-horizontal px-1">
       <li> <NavLink to={"/"} className={({isActive})=>isActive?"Active":"nonActive" }>Home</NavLink></li>
       <li><NavLink to={"/static"} className={({isActive})=>isActive?"Active":"nonActive" }>Static</NavLink></li>
-      <li><NavLink to={"/dashBoard/:id"} className={({isActive})=>isActive?"Active":"nonActive" }>DashBoard</NavLink></li>
+      <li><NavLink to={"/dashBoard"} className={({isActive})=>isActive?"Active":"nonActive" }>DashBoard</NavLink></li>
       
       
     

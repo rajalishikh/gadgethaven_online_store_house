@@ -1,5 +1,6 @@
 import { FaRegHeart, FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
 import { addToLs } from "../DashBoard/lss";
 const Pdc = ({data,fullData}) => {
 
@@ -13,6 +14,7 @@ const Pdc = ({data,fullData}) => {
       const findDataById=fullData.find(item=>item.id === id)
       console.log("Save data",findDataById)
       addToLs(findDataById)
+      toast("Sucesfully  save in card")
     
     }
     
@@ -26,6 +28,7 @@ const Pdc = ({data,fullData}) => {
         
            
            ">
+             <ToastContainer/>
   <figure className="border-4 m-5 border-[#9538E2]">
     <img
     
