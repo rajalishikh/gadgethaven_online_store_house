@@ -1,11 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 
+import Cart from "../Components/Cart/Cart";
 import Dashboard from "../Components/DashBoard/Dashboard";
 import ErrorElement from "../Components/ErrorElement/ErrorElement";
 import Home from "../Components/Home/Home";
 import MainRoute from "../Components/MainRoute/MainRoute";
 import Productdetails from "../Components/Productdetails/Productdetails";
 import Static from "../Components/Static/Static";
+import WishLIst from "../Components/WishLIst/WishLIst";
 
  export const router = createBrowserRouter([
   {
@@ -27,6 +29,18 @@ import Static from "../Components/Static/Static";
       {
         path:"/dashBoard",
         element:<Dashboard></Dashboard>,
+        children:[
+          {
+            path:"/dashBoard",
+            element:<Cart></Cart>
+          },
+          
+          {
+          path:"wishlist",
+          element:<WishLIst></WishLIst>
+          }
+
+        ]
         
 
       },
@@ -35,7 +49,8 @@ import Static from "../Components/Static/Static";
         path:"/productDetails/:bookId",
         element: <Productdetails></Productdetails>,
         loader:()=>fetch("../../public/data.json")
-      }
+      },
+      
     ]
   },
 ]);

@@ -1,12 +1,21 @@
+import { useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
-import Dbsd from "../DashBoardSaveData/Dbsd";
+import { NavLink, Outlet } from "react-router-dom";
 import './Dash.css';
-import { getStoreCard } from "./lss";
 
 const Dashboard = () => {
-  const saveData=getStoreCard()
-  console.log(saveData)
+  const [state,setState]=useState(false)
+  const handleClick=()=>{
+    setState(true)
+
+  }
+  const handleClick2=()=>{
+    setState(false)
+
+  }
+  console.log(state)
+
+  
   return (
         <div>
           {/* NavBar Section Start */}
@@ -82,13 +91,20 @@ const Dashboard = () => {
              <div className="pt-6">
                 <div>
             <h2 className="text-[#FFFFFF] font-bold text-2xl lg:text-3xl md:text-3xl  text-center ">DashBoard</h2>
-            <p className="text-[#FFFFFF] text-center mt-5">Explore the latest gadgets that will take your experience to the next level. From smart devices to <br />the coolest accessories, we have it all!</p>
+            <p className="text-[#FFFFFF] text-center mt-5">Explore the lates t gadgets that will take your experience to the next level. From smart devices to <br />the coolest accessories, we have it all!</p>
                </div>
 
                {/* Button Section  */}
                <div className="flex justify-center gap-2 mt-9">
-                <button className="border-2 border-[#FFFFFF] w-[150px] font-extrabold text-center rounded-xl p-2 text-white hover:bg-white hover:text-[#9538E2]"> Cart</button>
-                <button className="border-2 border-[#FFFFFF] w-[150px] font-extrabold text-center rounded-xl p-2 text-white hover:bg-white hover:text-[#9538E2]"> Wish LIst</button>
+                <NavLink onClick={()=>handleClick()}  className= {state?"bg-white text-[#9538E2]  border-2 border-[#FFFFFF] w-[150px] font-extrabold text-center rounded-xl p-2" : " border-2 border-[#FFFFFF] w-[150px] font-extrabold text-center rounded-xl p-2 text-white  " }    to={"/dashBoard"}>
+                <button > Cart</button>
+                </NavLink>
+                
+
+                <NavLink  onClick={()=>handleClick2()}  className={state? "border-2 border-[#FFFFFF] w-[150px] font-extrabold text-center rounded-xl p-2   text-white": "bg-white text-[#9538E2]  border-2 border-[#FFFFFF] w-[150px] font-extrabold text-center rounded-xl p-2" }   to={"wishlist"}> 
+                <button  > Wish LIst</button>
+                </NavLink>
+                
                </div>
             </div>
               
@@ -96,31 +112,10 @@ const Dashboard = () => {
 
           </div>
           {/* banar section end  */}
+          <Outlet></Outlet>
 
-          <div className="lg:ml-24 lg:mr-24 mt-10">
-
-            {/* heading part of container  */}
-            <div className="lg:flex md:flex lg:justify-between md:justify-between sm:justify-center">
-              <div className=""><h3 className="text-black  text-xl font-bold text-center">Cart</h3></div>
-              <div className="flex gap-2">
-                <div><p className="lg:text-xl font-bold text-black">Total Coast </p></div>
-                <div className="flex">
-                     <button className="border border-[#8332C5] p-2 rounded-xl text-sm text-[#8332C5] hover:text-white hover:bg-[#8332C5] mr-2 lg:w-28 font-bold">Short by price </button>
-                      <button className="border border-[#8332C5] p-2 rounded-xl text-sm text-[#8332C5] hover:text-white hover:bg-[#8332C5]  lg:w-28 font-bold">Purchase</button>
-                </div>
-                
-               
-
-              </div>
-
-            </div>
-            {/* heading part end  of container  */}
-            {/* div for heading  */}
-            {
-              saveData.map(item=><Dbsd saveData={item}> </Dbsd>)
-            }
+          
            
-          </div>
             
             
         </div>
