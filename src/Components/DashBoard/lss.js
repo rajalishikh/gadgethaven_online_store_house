@@ -13,11 +13,12 @@ const saveCart=(data)=>{
     localStorage.setItem("card",convertData)
     
 }
+
 const addToLs=(id)=>{
     const bringData=getStoreCard()
     bringData.push(id)
     saveCart(bringData)
 }
 
-export { addToLs, getStoreCard }
+export { addToLs, getStoreCard, saveCart }
 

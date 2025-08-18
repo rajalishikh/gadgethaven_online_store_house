@@ -13,13 +13,7 @@ const Cart = () => {
 
       },[])
       
-      
-      
-     
-    
-      
-      
-    return (
+      return (
         <div>
             <div className="lg:ml-24 lg:mr-24 mt-10">
             

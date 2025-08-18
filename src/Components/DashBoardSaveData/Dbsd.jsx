@@ -1,6 +1,20 @@
 import { TiDeleteOutline } from "react-icons/ti";
+import { getStoreCard, saveCart } from "../DashBoard/lss";
+
+
+
 const Dbsd = ({saveData}) => {
     const {id,category,name,specification,price,rating,image,details}=saveData
+  
+
+    const handleDeleteClick=(id)=>{
+      console.log("MY Id",id)
+      const getTheData=getStoreCard()
+      const deleteData=getTheData.filter(item=>item.id != id)
+      saveCart(deleteData)
+      location.reload()
+      
+    }
     return (
         <div>
              
@@ -24,8 +38,8 @@ const Dbsd = ({saveData}) => {
 
     </div>
     
-    <div className="mr-2">
-      <button className="text-4xl  text-red-600"><TiDeleteOutline /></button>
+    <div className="mr-2 hover:bg-[#9538E2] rounded-full ">
+      <button onClick={()=>handleDeleteClick(id)} className="text-4xl  text-red-600 hover:text-white"><TiDeleteOutline /></button>
     </div>
   </div>
 </div>
