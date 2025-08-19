@@ -1,4 +1,4 @@
-const getStoreCard=()=>{
+const getStoreCard2=()=>{
     const findWishValue=localStorage.getItem("wish")
     if(findWishValue){
         return JSON.parse(findWishValue)
@@ -19,4 +19,5 @@ const pushData=(data)=>{
     saveCard(findData)
 }
 
-export default{getStoreCard,pushData}
+export { getStoreCard2, pushData }
+

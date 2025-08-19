@@ -1,7 +1,7 @@
-import { getStoreCard } from "../DashBoard/lss.js";
 import Dbsd from "../DashBoardSaveData/Dbsd.jsx";
+import { getStoreCard2 } from "../ProductDetailsCard/wish.js";
 const WishLIst = () => {
-     const saveData=getStoreCard()
+     const saveData=getStoreCard2()
     return (
         <div>
             <div className="lg:ml-24 lg:mr-24 mt-10">

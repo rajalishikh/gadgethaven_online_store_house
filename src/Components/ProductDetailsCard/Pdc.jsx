@@ -2,6 +2,7 @@ import { FaRegHeart, FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import { addToLs } from "../DashBoard/lss";
+import { pushData } from "./wish";
 const Pdc = ({data,fullData}) => {
 
   
@@ -19,7 +20,10 @@ const Pdc = ({data,fullData}) => {
     }
 
     const handleSaveWishList=()=>{
+      const findData=fullData.find(item=>item.id=== id)
+      pushData(findData)
       toast("Successfully Saved to WishList")
+      
 
     }
     
