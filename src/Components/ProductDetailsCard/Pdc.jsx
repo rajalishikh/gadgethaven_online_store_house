@@ -17,6 +17,11 @@ const Pdc = ({data,fullData}) => {
       toast("Successfully Saved to Dashboard")
     
     }
+
+    const handleSaveWishList=()=>{
+      toast("Successfully Saved to WishList")
+
+    }
     
     
     return (
@@ -76,7 +81,7 @@ const Pdc = ({data,fullData}) => {
     <FaShoppingCart />
   </div>
 </div>
-<div className="ml-3   border-2 border-[#09080F0D] rounded-full p-3">
+<div onClick={()=>handleSaveWishList()} className="ml-3   border-2 border-[#09080F0D] rounded-full p-3 hover:bg-[#9538E2] hover:text-white">
   <FaRegHeart />
 </div>
 </div>
