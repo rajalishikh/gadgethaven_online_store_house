@@ -14,7 +14,7 @@ const saveCard=(saveData)=>{
 }
 
 const pushData=(data)=>{
-    const findData=getStoreCard()
+    const findData=getStoreCard2()
     findData.push(data)
     saveCard(findData)
 }

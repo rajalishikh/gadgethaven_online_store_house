@@ -4,9 +4,10 @@ import { NavLink, Outlet } from "react-router-dom";
 import './Dash.css';
 
 const Dashboard = () => {
-  const [state,setState]=useState(false)
+  const [state,setState]=useState(true)
   const handleClick=()=>{
     setState(true)
+   
 
   }
   const handleClick2=()=>{
@@ -96,12 +97,13 @@ const Dashboard = () => {
 
                {/* Button Section  */}
                <div className="flex justify-center gap-2 mt-9">
-                <NavLink onClick={()=>handleClick()}  className= {state?"bg-white text-[#9538E2]  border-2 border-[#FFFFFF] w-[150px] font-extrabold text-center rounded-xl p-2" : " border-2 border-[#FFFFFF] w-[150px] font-extrabold text-center rounded-xl p-2 text-white  " }    to={"/dashBoard"}>
+                <NavLink onClick={()=>handleClick()} 
+                 className= {state?  "bg-white text-[#9538E2]  border-2 border-[#FFFFFF] w-[150px] font-extrabold text-center rounded-xl p-2" :" border-2 border-[#FFFFFF] w-[150px] font-extrabold text-center rounded-xl p-2 text-white "  }    to={"/dashBoard"}>
                 <button > Cart</button>
                 </NavLink>
                 
 
-                <NavLink  onClick={()=>handleClick2()}  className={state? "border-2 border-[#FFFFFF] w-[150px] font-extrabold text-center rounded-xl p-2   text-white": "bg-white text-[#9538E2]  border-2 border-[#FFFFFF] w-[150px] font-extrabold text-center rounded-xl p-2" }   to={"wishlist"}> 
+                <NavLink  onClick={()=>handleClick2()}  className={state?" border-2 border-[#FFFFFF] w-[150px] font-extrabold text-center rounded-xl p-2 text-white": "bg-white text-[#9538E2]  border-2 border-[#FFFFFF] w-[150px] font-extrabold text-center rounded-xl p-2"}   to={"wishlist"}> 
                 <button  > Wish LIst</button>
                 </NavLink>
                 
