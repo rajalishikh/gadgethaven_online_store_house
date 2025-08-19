@@ -6,6 +6,7 @@ import Dbsd from "../DashBoardSaveData/Dbsd.jsx";
 const Cart = () => {
       const saveData=getStoreCard()
       const [price,setPrice]=useState(0)
+      const [itemCard,setItemCard]=useState([])
       
       useEffect(()=>{
         const newData= saveData.reduce((sum, item)=>sum+item.price,0)
@@ -13,6 +14,9 @@ const Cart = () => {
 
       },[])
       
+      useEffect(()=>{
+        setItemCard(saveData)
+      },[])
       return (
         <div>
             <div className="lg:ml-24 lg:mr-24 mt-10">
@@ -37,7 +41,7 @@ const Cart = () => {
             {/* heading part end  of container  */}
             {/* div for heading  */}
             {
-              saveData.map((item,idx)=><Dbsd key={idx} saveData={item}></Dbsd>)
+              itemCard.map((item,idx)=><Dbsd key={idx} setItemCard={setItemCard} saveData={item}></Dbsd>)
             }
            
           </div>

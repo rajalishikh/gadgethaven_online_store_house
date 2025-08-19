@@ -1,15 +1,14 @@
 import { TiDeleteOutline } from "react-icons/ti";
 import { getStoreCard2, saveCard2 } from "../ProductDetailsCard/wish";
 
-const WishLIstStore = ({saveData}) => {
+const WishLIstStore = ({saveData,updateItem}) => {
     const {id,category,name,specification,price,rating,image,details}=saveData
     const handleDeleteClick=(id)=>{
       console.log("MY Id",id)
       const getTheData=getStoreCard2()
       const deleteData=getTheData.filter(item=>item.id != id)
       saveCard2(deleteData)
-      location.reload()
-      
+      updateItem(deleteData)
     }
     return (
         <div>

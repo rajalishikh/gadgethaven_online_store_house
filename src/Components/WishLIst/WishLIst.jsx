@@ -1,7 +1,15 @@
+import { useEffect, useState } from "react";
 import { getStoreCard2 } from "../ProductDetailsCard/wish.js";
 import WishLIstStore from "../WishListStore/WishLIstStore.jsx";
 const WishLIst = () => {
      const saveData=getStoreCard2()
+     useEffect(()=>{
+      updateItem(saveData)
+
+     },[])
+     const [item,updateItem]=useState([])
+     
+
     return (
         <div>
             <div className="lg:ml-24 lg:mr-24 mt-10">
@@ -17,7 +25,7 @@ const WishLIst = () => {
                         {/* heading part end  of container  */}
                         {/* div for heading  */}
                         {
-                          saveData.map((item,idx)=><WishLIstStore key={idx} saveData={item}></WishLIstStore>)
+                          item.map((item,idx)=><WishLIstStore key={idx} updateItem={updateItem} saveData={item}></WishLIstStore>)
                         }
                        
                       </div>

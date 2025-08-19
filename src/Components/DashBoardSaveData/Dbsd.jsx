@@ -3,7 +3,7 @@ import { getStoreCard, saveCart } from "../DashBoard/lss";
 
 
 
-const Dbsd = ({saveData}) => {
+const Dbsd = ({saveData,setItemCard}) => {
     const {id,category,name,specification,price,rating,image,details}=saveData
   
 
@@ -12,7 +12,8 @@ const Dbsd = ({saveData}) => {
       const getTheData=getStoreCard()
       const deleteData=getTheData.filter(item=>item.id != id)
       saveCart(deleteData)
-      location.reload()
+      setItemCard(deleteData)
+      
       
     }
     return (
