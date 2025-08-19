@@ -7,7 +7,7 @@ const getStoreCard2=()=>{
     }
 }
 
-const saveCard=(saveData)=>{
+const saveCard2=(saveData)=>{
     
     const convert=JSON.stringify(saveData)
     localStorage.setItem("wish",convert)
@@ -16,8 +16,8 @@ const saveCard=(saveData)=>{
 const pushData=(data)=>{
     const findData=getStoreCard2()
     findData.push(data)
-    saveCard(findData)
+    saveCard2(findData)
 }
 
-export { getStoreCard2, pushData }
+export { getStoreCard2, pushData, saveCard2 }
 

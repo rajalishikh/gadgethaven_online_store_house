@@ -1,5 +1,5 @@
-import Dbsd from "../DashBoardSaveData/Dbsd.jsx";
 import { getStoreCard2 } from "../ProductDetailsCard/wish.js";
+import WishLIstStore from "../WishListStore/WishLIstStore.jsx";
 const WishLIst = () => {
      const saveData=getStoreCard2()
     return (
@@ -17,7 +17,7 @@ const WishLIst = () => {
                         {/* heading part end  of container  */}
                         {/* div for heading  */}
                         {
-                          saveData.map((item,idx)=><Dbsd key={idx} saveData={item}></Dbsd>)
+                          saveData.map((item,idx)=><WishLIstStore key={idx} saveData={item}></WishLIstStore>)
                         }
                        
                       </div>
