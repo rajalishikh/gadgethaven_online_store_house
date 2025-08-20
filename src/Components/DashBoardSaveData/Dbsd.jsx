@@ -1,26 +1,33 @@
+
 import { TiDeleteOutline } from "react-icons/ti";
 import { getStoreCard, saveCart } from "../DashBoard/lss";
 
+import { toast } from 'react-toastify';
 
 
 const Dbsd = ({saveData,setItemCard}) => {
     const {id,category,name,specification,price,rating,image,details}=saveData
+    
+ 
   
 
     const handleDeleteClick=(id)=>{
+     
       console.log("MY Id",id)
       const getTheData=getStoreCard()
       const deleteData=getTheData.filter(item=>item.id != id)
       saveCart(deleteData)
+      toast("The card has been successfully deleted from your CardList")
       setItemCard(deleteData)
       
-      
     }
+     
     return (
         <div>
-             
+            
 
             <div>
+             
                <div className="card card-side bg-base-100 shadow-xl mb-4 mt-4">
   <figure>
     {/* Image part */}
@@ -32,6 +39,7 @@ const Dbsd = ({saveData,setItemCard}) => {
   </figure>
   {/* container part  */}
   <div className="flex  justify-between w-full items-center">
+  
     <div>
         <h2 className="card-title font-bold text-xl">{name}</h2>
         <p>{specification}</p>
@@ -45,6 +53,7 @@ const Dbsd = ({saveData,setItemCard}) => {
   </div>
 </div>
             </div>
+          
             
         </div>
     );

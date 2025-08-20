@@ -24,7 +24,8 @@ const Pdc = ({data,fullData}) => {
       pushData(findData)
       toast("Successfully Saved to WishList")
       
-    }
+
+}
     
     
     return (

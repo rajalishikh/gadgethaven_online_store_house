@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaArrowUpShortWide } from "react-icons/fa6";
+import { ToastContainer } from 'react-toastify';
 import { getStoreCard } from "../DashBoard/lss";
 import Dbsd from "../DashBoardSaveData/Dbsd.jsx";
 
@@ -45,6 +46,7 @@ const Cart = () => {
             }
            
           </div>
+          <ToastContainer/>
             
         </div>
     );

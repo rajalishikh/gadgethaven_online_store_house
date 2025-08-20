@@ -1,14 +1,24 @@
+
+
 import { TiDeleteOutline } from "react-icons/ti";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { getStoreCard2, saveCard2 } from "../ProductDetailsCard/wish";
 
 const WishLIstStore = ({saveData,updateItem}) => {
     const {id,category,name,specification,price,rating,image,details}=saveData
+    
+    
     const handleDeleteClick=(id)=>{
       console.log("MY Id",id)
       const getTheData=getStoreCard2()
       const deleteData=getTheData.filter(item=>item.id != id)
+      
       saveCard2(deleteData)
+      toast("The card has been successfully deleted from your wishlist")
       updateItem(deleteData)
+     
+      
     }
     return (
         <div>
@@ -35,10 +45,13 @@ const WishLIstStore = ({saveData,updateItem}) => {
             
             <div className="mr-2 hover:bg-[#9538E2] rounded-full ">
               <button onClick={()=>handleDeleteClick(id)} className="text-4xl  text-red-600 hover:text-white"><TiDeleteOutline /></button>
+              
             </div>
           </div>
-        </div>
+                       </div>
                     </div>
+                  
+                   
                     
                 </div>
     );

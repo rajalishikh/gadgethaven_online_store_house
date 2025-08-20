@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { ToastContainer } from 'react-toastify';
 import { getStoreCard2 } from "../ProductDetailsCard/wish.js";
 import WishLIstStore from "../WishListStore/WishLIstStore.jsx";
 const WishLIst = () => {
@@ -27,6 +28,7 @@ const WishLIst = () => {
                         {
                           item.map((item,idx)=><WishLIstStore key={idx} updateItem={updateItem} saveData={item}></WishLIstStore>)
                         }
+                        <ToastContainer/>
                        
                       </div>
                         
