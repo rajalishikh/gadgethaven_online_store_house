@@ -8,17 +8,34 @@ const Cart = () => {
       const saveData=getStoreCard()
       const [price,setPrice]=useState(0)
       const [itemCard,setItemCard]=useState([])
-      
-      useEffect(()=>{
-        const newData= saveData.reduce((sum, item)=>sum+item.price,0)
-        setPrice(newData)
 
-      },[])
-      
       useEffect(()=>{
         setItemCard(saveData)
+
+        
       },[])
-      return (
+      console.log(itemCard)
+     
+      useEffect(()=>{
+         console.log(itemCard)
+        const saveDataLs=itemCard.map(item=>item.price)
+        console.log("here is my price array ",saveDataLs)
+        let totalPrice=saveDataLs.reduce((previousValue,currentValue)=>{
+          return previousValue+currentValue},
+          0)
+          setPrice(totalPrice)
+        console.log("here is my price  ", totalPrice)
+        
+        
+      },[itemCard])
+      
+      
+      
+     
+      
+      
+      
+       return (
         <div>
             <div className="lg:ml-24 lg:mr-24 mt-10">
             
