@@ -9,13 +9,14 @@ const Cart = () => {
       const [price,setPrice]=useState(0)
       const [itemCard,setItemCard]=useState([])
 
+//  set the local storage price in state 
       useEffect(()=>{
         setItemCard(saveData)
-
-        
+ 
       },[])
       console.log(itemCard)
-     
+
+      // show the price when the state update .The part is for full price 
       useEffect(()=>{
          console.log(itemCard)
         const saveDataLs=itemCard.map(item=>item.price)
@@ -25,8 +26,7 @@ const Cart = () => {
           0)
           setPrice(totalPrice)
         console.log("here is my price  ", totalPrice)
-        
-        
+       
       },[itemCard])
       
       
