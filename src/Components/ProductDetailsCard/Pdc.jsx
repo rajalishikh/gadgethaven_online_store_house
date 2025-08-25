@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { FaRegHeart, FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
@@ -7,6 +8,7 @@ const Pdc = ({data,fullData}) => {
 
   
     const {id,category,name,specification,price,rating,image,details}=data
+    const [Isdisabled,setDisabled]=useState(false)
 
     // function for save the data in local Storage 
 
@@ -16,16 +18,19 @@ const Pdc = ({data,fullData}) => {
       console.log("Save data",findDataById)
       addToLs(findDataById)
       toast("Successfully Saved to Dashboard")
+      
     
     }
+    
 
     const handleSaveWishList=()=>{
       const findData=fullData.find(item=>item.id=== id)
       pushData(findData)
       toast("Successfully Saved to WishList")
       
-
-}
+      setDisabled(true)
+      
+     }
     
     
     return (
@@ -85,9 +90,9 @@ const Pdc = ({data,fullData}) => {
     <FaShoppingCart />
   </div>
 </div>
-<div onClick={()=>handleSaveWishList()} className="ml-3   border-2 border-[#09080F0D] rounded-full p-3 hover:bg-[#9538E2] hover:text-white">
-  <FaRegHeart />
-</div>
+<button disabled={Isdisabled}  id="button_1" onClick={()=>handleSaveWishList(this)} className="ml-3   border-2 border-[#09080F0D] rounded-full p-3 hover:bg-[#9538E2] hover:text-white">
+  {Isdisabled? "Disabled" :<FaRegHeart />}
+</button>
 </div>
 
 
