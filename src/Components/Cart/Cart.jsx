@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaArrowUpShortWide } from "react-icons/fa6";
-import { ToastContainer } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import { getStoreCard } from "../DashBoard/lss";
 import Dbsd from "../DashBoardSaveData/Dbsd.jsx";
 
@@ -14,6 +14,12 @@ const Cart = () => {
         setItemCard(saveData)
  
       },[])
+
+      const handleShort=()=>{
+        const descendingOrder=saveData.sort((item1,item2)=>item2.price-item1.price)
+        setItemCard(descendingOrder)
+        toast("Highest-priced product here it is")
+      }
       
 
       // show the price when the state update .The part is for full price 
@@ -29,13 +35,7 @@ const Cart = () => {
        
       },[itemCard])
       
-      
-      
-     
-      
-      
-      
-       return (
+      return (
         <div>
             <div className="lg:ml-24 lg:mr-24 mt-10">
             
@@ -47,7 +47,7 @@ const Cart = () => {
               <div className="flex gap-2">
                 <div><p className="lg:text-xl font-bold text-black">Total Coast:<span>{price}</span> </p></div>
                 <div className="flex">
-                     <button className="flex border border-[#8332C5] p-2 rounded-xl text-sm text-[#8332C5] hover:text-white hover:bg-[#8332C5] mr-2 lg:w-36 font-bold">Short by price <FaArrowUpShortWide className="h-6 ml-2" /> </button>
+                     <button onClick={()=>handleShort()} className="flex border border-[#8332C5] p-2 rounded-xl text-sm text-[#8332C5] hover:text-white hover:bg-[#8332C5] mr-2 lg:w-36 font-bold">Short by price <FaArrowUpShortWide className="h-6 ml-2" /> </button>
                       <button className="border border-[#8332C5] p-2 rounded-xl text-sm text-[#8332C5] hover:text-white hover:bg-[#8332C5]  lg:w-36 font-bold">Purchase</button>
                 </div>
                 
