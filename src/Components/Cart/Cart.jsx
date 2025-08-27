@@ -14,18 +14,18 @@ const Cart = () => {
         setItemCard(saveData)
  
       },[])
-      console.log(itemCard)
+      
 
       // show the price when the state update .The part is for full price 
       useEffect(()=>{
-         console.log(itemCard)
+         
         const saveDataLs=itemCard.map(item=>item.price)
-        console.log("here is my price array ",saveDataLs)
+       
         let totalPrice=saveDataLs.reduce((previousValue,currentValue)=>{
           return previousValue+currentValue},
           0)
           setPrice(totalPrice)
-        console.log("here is my price  ", totalPrice)
+        
        
       },[itemCard])
       
