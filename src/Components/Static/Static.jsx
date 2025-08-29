@@ -1,10 +1,23 @@
 import { FaRegHeart } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLoaderData } from "react-router-dom";
+import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import './st.css';
 
 const Static = () => {
+  const loader=useLoaderData()
+  
+  
+  console.log(loader)
+  
+  
+  
+  
+  
+
+  
     return (
         <div>
+          {/* NavBar Section  */}
            <div id="my_banner" className="navbar text-[#0B0B0B] bg-[#FFFFFF] ">
   <div className="navbar-start">
     <div className="dropdown">
@@ -70,6 +83,7 @@ const Static = () => {
     
   </div>
            </div>
+           {/* NavBar body content section  */}
            <div className="min-h-[300px] lg:min-h-[300px] bg-[#9538E2] ">
               
                 
@@ -85,6 +99,37 @@ const Static = () => {
                 
 
           </div>
+          {/* NavBar Full section  */}
+
+          <div className="w-full h-[600px]">
+            <ResponsiveContainer width="100%" height="100%">
+      <BarChart
+        width={500}
+        height={300}
+        data={loader}
+        margin={{
+          top: 20,
+          right: 30,
+          left: 20,
+          bottom: 5,
+        }}
+      >
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey='name' />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+        <Bar dataKey="price" stackId="a" fill="#8884d8" />
+        <Bar dataKey="rating" stackId="a" fill="#82ca9d" />
+      </BarChart>
+          </ResponsiveContainer>
+           
+
+          </div>
+         
+          
+
+          
             
             
         </div>

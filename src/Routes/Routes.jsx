@@ -23,7 +23,8 @@ import WishLIst from "../Components/WishLIst/WishLIst";
       {
 
         path:"/static",
-        element:<Static></Static>
+        element:<Static></Static>,
+        loader:()=>fetch("../../public/data.json")
 
       },
       {
