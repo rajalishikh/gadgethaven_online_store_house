@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaArrowUpShortWide } from "react-icons/fa6";
+import { MdCelebration } from "react-icons/md";
 import { toast, ToastContainer } from 'react-toastify';
 import { getStoreCard } from "../DashBoard/lss";
 import Dbsd from "../DashBoardSaveData/Dbsd.jsx";
@@ -34,6 +35,11 @@ const Cart = () => {
         
        
       },[itemCard])
+
+      const showModel=()=>{
+        document.getElementById('my_modal_5').showModal()
+
+      }
       
       return (
         <div>
@@ -48,7 +54,7 @@ const Cart = () => {
                 <div><p className="lg:text-xl font-bold text-black">Total Coast:<span>{price}</span> </p></div>
                 <div className="flex">
                      <button onClick={()=>handleShort()} className="flex border border-[#8332C5] p-2 rounded-xl text-sm text-[#8332C5] hover:text-white hover:bg-[#8332C5] mr-2 lg:w-36 font-bold">Short by price <FaArrowUpShortWide className="h-6 ml-2" /> </button>
-                      <button className="border border-[#8332C5] p-2 rounded-xl text-sm text-[#8332C5] hover:text-white hover:bg-[#8332C5]  lg:w-36 font-bold">Purchase</button>
+                      <button  onClick={()=>showModel()}  className="border border-[#8332C5] p-2 rounded-xl text-sm text-[#8332C5] hover:text-white hover:bg-[#8332C5]  lg:w-36 font-bold">Purchase</button>
                 </div>
                 
                
@@ -64,6 +70,26 @@ const Cart = () => {
            
           </div>
           <ToastContainer/>
+
+          {/* modal part  */}
+          <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+        <div className="modal-box">
+          <div className="flex ">
+            
+            <div><h3 className="font-bold text-lg">Congratulation </h3></div>
+            <div className="w-6 mt-1 text-[]"><MdCelebration /></div>
+            </div>
+            
+    
+    <p className="py-4">Press ESC key or click the button below to close</p>
+    <div className="modal-action">
+      <form method="dialog">
+        {/* if there is a button in form, it will close the modal */}
+        <button className="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
             
         </div>
     );
