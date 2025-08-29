@@ -11,6 +11,18 @@ const Cart = () => {
       const [price,setPrice]=useState(0)
       const [itemCard,setItemCard]=useState([])
       const navigate = useNavigate();
+      const [stateT,setStateT]=useState(true)
+
+      useEffect(()=>{
+        if(price >0){
+        setStateT(false)
+      }else if(price<0){
+        setStateT(true)
+
+      }
+    },[price])
+
+      
 
 //  set the local storage price in state 
       useEffect(()=>{
@@ -61,7 +73,7 @@ const Cart = () => {
                 <div><p className="lg:text-xl font-bold text-black">Total Coast:<span>{price}</span> </p></div>
                 <div className="flex">
                      <button onClick={()=>handleShort()} className="flex border border-[#8332C5] p-2 rounded-xl text-sm text-[#8332C5] hover:text-white hover:bg-[#8332C5] mr-2 lg:w-36 font-bold">Short by price <FaArrowUpShortWide className="h-6 ml-2" /> </button>
-                      <button  onClick={()=>showModel()}  className="border border-[#8332C5] p-2 rounded-xl text-sm text-[#8332C5] hover:text-white hover:bg-[#8332C5]  lg:w-36 font-bold">Purchase</button>
+                      <button disabled={stateT} onClick={()=>showModel()}  className="border border-[#8332C5] p-2 rounded-xl text-sm text-[#8332C5] hover:text-white hover:bg-[#8332C5]  lg:w-36 font-bold">{stateT?"Disabled":"purchases"}</button>
                 </div>
                 
                

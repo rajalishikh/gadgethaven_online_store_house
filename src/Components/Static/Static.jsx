@@ -6,16 +6,7 @@ import './st.css';
 const Static = () => {
   const loader=useLoaderData()
   
-  
-  console.log(loader)
-  
-  
-  
-  
-  
-
-  
-    return (
+   return (
         <div>
           {/* NavBar Section  */}
            <div id="my_banner" className="navbar text-[#0B0B0B] bg-[#FFFFFF] ">
@@ -126,11 +117,6 @@ const Static = () => {
            
 
           </div>
-         
-          
-
-          
-            
             
         </div>
     );
