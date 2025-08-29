@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 
+import AllProduct from "../Components/AllProduct/AllProduct";
 import Cart from "../Components/Cart/Cart";
 import Dashboard from "../Components/DashBoard/Dashboard";
 import ErrorElement from "../Components/ErrorElement/ErrorElement";
@@ -18,6 +19,7 @@ import WishLIst from "../Components/WishLIst/WishLIst";
       {
         path:"/",
         element:<Home></Home>
+  
 
       },
       {
@@ -51,7 +53,10 @@ import WishLIst from "../Components/WishLIst/WishLIst";
         element: <Productdetails></Productdetails>,
         loader:()=>fetch("../../public/data.json")
       },
-      
+      {
+        path:"/AllProduct",
+        element:<AllProduct></AllProduct>
+      }
     ]
   },
 ]);
