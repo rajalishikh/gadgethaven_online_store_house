@@ -44,6 +44,8 @@ const Cart = () => {
       }
       const HandleLink=()=>{
         navigate("/")
+        localStorage.removeItem("card")
+        
       }
       
       return (
