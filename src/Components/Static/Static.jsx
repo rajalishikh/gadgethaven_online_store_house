@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { FaRegHeart } from "react-icons/fa";
 import { NavLink, useLoaderData } from "react-router-dom";
 import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
@@ -5,9 +6,13 @@ import './st.css';
 
 const Static = () => {
   const loader=useLoaderData()
+  console.log(loader)
   
    return (
         <div>
+          <Helmet>
+            <title>StaticPage</title>
+          </Helmet>
           {/* NavBar Section  */}
            <div id="my_banner" className="navbar text-[#0B0B0B] bg-[#FFFFFF] ">
   <div className="navbar-start">
@@ -97,7 +102,7 @@ const Static = () => {
       <BarChart
         width={500}
         height={300}
-        data={loader}
+        data={Array.isArray(loader) ? loader : []}
         margin={{
           top: 20,
           right: 30,

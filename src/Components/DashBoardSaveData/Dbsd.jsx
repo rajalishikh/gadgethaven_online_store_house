@@ -2,6 +2,7 @@
 import { TiDeleteOutline } from "react-icons/ti";
 import { getStoreCard, saveCart } from "../DashBoard/lss";
 
+import { Helmet } from "react-helmet-async";
 import { toast } from 'react-toastify';
 
 
@@ -12,6 +13,9 @@ const Dbsd = ({saveData,setItemCard}) => {
   
 
     const handleDeleteClick=(id)=>{
+      <Helmet>
+        <title>DashBOard</title>
+      </Helmet>
      
       console.log("MY Id",id)
       const getTheData=getStoreCard()

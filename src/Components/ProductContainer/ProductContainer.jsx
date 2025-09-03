@@ -13,7 +13,7 @@ const ProductContainer = ({buttonName}) => {
     const sliceProduct=product.slice(0,9)
     
     useEffect(()=>{
-        fetch("../../../public/data.json")
+        fetch("/data.json")
         .then(res=>res.json())
         .then(data=>setProduct(data))
     },[])

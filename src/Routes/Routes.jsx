@@ -26,7 +26,7 @@ import WishLIst from "../Components/WishLIst/WishLIst";
 
         path:"/static",
         element:<Static></Static>,
-        loader:()=>fetch("../../public/data.json")
+        loader:()=>fetch("/data.json")
 
       },
       {
@@ -51,7 +51,7 @@ import WishLIst from "../Components/WishLIst/WishLIst";
       {
         path:"/productDetails/:bookId",
         element: <Productdetails></Productdetails>,
-        loader:()=>fetch("../../public/data.json")
+        loader:()=>fetch("/data.json")
       },
       {
         path:"/AllProduct",

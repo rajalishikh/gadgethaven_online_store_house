@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { FaRegHeart } from "react-icons/fa";
 import { NavLink, Outlet } from "react-router-dom";
 import './Dash.css';
@@ -84,6 +85,9 @@ const Dashboard = () => {
     
   </div>
              </div>
+             <Helmet>
+              <title>DashBoard</title>
+             </Helmet>
           {/*  NavBar section End  */}
           {/* banar section start  */}
           <div className="min-h-[300px] lg:min-h-[300px] bg-[#9538E2] ">

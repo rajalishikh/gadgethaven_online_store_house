@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 import AllProduct from "../AllProduct/AllProduct";
 import Banner from '../Banner/Banner';
@@ -12,6 +13,10 @@ const Home = () => {
     return (
         <div>
            {/* banner section */}
+           <Helmet>
+            <title>Home Page</title>
+
+           </Helmet>
            
 
            
